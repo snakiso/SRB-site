@@ -1,0 +1,41 @@
+@import '../scss/breakpoints';
+@import '../scss/vars';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Wix Madefor Display', sans-serif;
+  overflow-x: hidden;
+}
+
+.page{
+  position: relative;
+ // overflow-x: hidden;
+}
+
+
+@import '../scss/layout';
+@import '../scss/wrapper';
+@import '../scss/animation';
+@import '../html/common/header/header';
+@import '../html/common/footer/footer';
+@import '../html/blocks/nav/nav';
+@import '../html/blocks/hamburger/humburger';
+@import '../html/blocks/contact/contact';

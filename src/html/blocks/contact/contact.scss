@@ -1,0 +1,39 @@
+.contact {
+    position: relative;
+    @include Body_Standart_1_Desktop_Regular;
+    padding-left: 25px;
+    display: block;
+    color: $color-primary1;
+
+    &_tel::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/icons/tel.svg);
+        left: 0;
+        background-size: cover;
+    }
+
+    &_mail::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 15px;
+        background-image: url(../img/icons/mail.svg);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: cover;
+    }
+
+    &_loc::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 19px;
+        background-image: url(../img/icons/loc.svg);
+        left: 0;
+        background-size: cover;
+    }
+}
