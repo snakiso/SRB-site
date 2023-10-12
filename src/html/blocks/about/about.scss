@@ -1,0 +1,215 @@
+.about {
+
+    @include desktop {
+        padding: $offset-bigest 0;
+
+        &__inner {
+            &_flex {
+                grid-column: 2/11 span;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            &_grid {
+                grid-column: 2/10 span;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                column-gap: $offset-main;
+            }
+        }
+
+        &__title {
+            grid-column: 3 span;
+        }
+
+        &__subtitle {
+            @include Body_Accent1_Desktop;
+            margin-bottom: $offset-secondary;
+        }
+
+        &__content {
+            grid-column: 7 span;
+            margin-left: $grid-col;
+        }
+
+        &__text:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            margin-top: 50px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__box-main {
+            display: flex;
+            align-items: end;
+        }
+
+        &__box-number {
+            font-size: 130px;
+            color: $color-accent;
+            margin-right: 10px;
+        }
+
+        &__box-text {
+            font-size: 30px;
+            font-weight: 400;
+            color: $color-accent;
+            margin-bottom: 20px;
+        }
+
+        &__box-description {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+
+    @include tablet {
+        padding: 90px 0;
+
+        &__inner {
+            &_flex {
+                grid-column: 12 span;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            &_grid {
+                grid-column: 12 span;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                column-gap: $offset-main;
+            }
+        }
+
+        &__title {
+            grid-column: 4 span;
+        }
+
+        &__subtitle {
+            @include Body_Accent1_Desktop;
+            margin-bottom: $offset-secondary;
+        }
+
+        &__content {
+            grid-column: 8 span;
+            margin-left: $grid-col;
+        }
+
+        &__text:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            margin-top: 50px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__box-main {
+            display: flex;
+            align-items: end;
+        }
+
+        &__box-number {
+            font-size: 120px;
+            color: $color-accent;
+            margin-right: 10px;
+        }
+
+        &__box-text {
+            font-size: 30px;
+            font-weight: 400;
+            color: $color-accent;
+            margin-bottom: 20px;
+        }
+
+        &__box-description {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    @include mobile {
+        padding: 70px 0;
+
+        &__inner {
+            &_flex {
+                grid-column: 12 span;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &_grid {
+                grid-column: 12 span;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                column-gap: $offset-main;
+            }
+        }
+
+        &__title {
+            grid-column: 12 span;
+        }
+
+        &__subtitle {
+            @include Body_Accent1_Mobile;
+            margin-bottom: $offset-secondary;
+            margin-top: $offset-main;
+        }
+
+        &__content {
+            grid-column: 12 span;
+        }
+
+        &__text:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            margin-top: $offset-main;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__box-main {
+            display: flex;
+            align-items: end;
+        }
+
+        &__box-number {
+            font-size: 110px;
+            color: $color-accent;
+            margin-right: 10px;
+        }
+
+        &__box-text {
+            font-size: 30px;
+            font-weight: 400;
+            color: $color-accent;
+            margin-bottom: 20px;
+        }
+
+        &__box-description {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}

@@ -8,11 +8,11 @@
     &_tel::before {
         position: absolute;
         content: '';
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
         background-image: url(../img/icons/tel.svg);
         left: 0;
-        background-size: cover;
+        background-size: contain;
     }
 
     &_mail::before {
@@ -35,5 +35,31 @@
         background-image: url(../img/icons/loc.svg);
         left: 0;
         background-size: cover;
+    }
+
+    &_telegram::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 15px;
+        background-image: url(../img/icons/telegram-sm.svg);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
+    }
+
+    &_whatsapp::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 18px;
+        background-image: url(../img/icons/whatsapp-sm.svg);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
     }
 }

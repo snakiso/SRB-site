@@ -1,0 +1,147 @@
+.menu {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    right: -200%;
+    top: 0;
+    bottom: 0;
+    background-color: $color-accent;
+    z-index: 5;
+    transition: ease-in .2s;
+    overflow: auto;
+
+
+    @include desktop {
+        background-image: url(../img/menu/menu-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &__inner {
+            padding: 200px 0;
+            grid-column: 2/10 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__left-block {
+            grid-column: 5 span;
+        }
+
+        &__right-block {
+            grid-column: 6/4 span;
+        }
+
+        &__block:not(:last-child) {
+            margin-bottom: $offset-main;
+        }
+
+        &__block-title {
+            color: $color-primary1;
+            @include H3_D;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__block-list {
+            margin-top: $offset-secondary;
+        }
+
+        &__block-item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__block-link {
+            color: $color-primary1;
+            @include Body_Standart_1_Desktop_Regular;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @include tablet {
+        &__inner {
+            padding: 150px 0;
+            grid-column: 2/10 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__left-block {
+            grid-column: 5 span;
+        }
+
+        &__right-block {
+            grid-column: 6/4 span;
+        }
+
+        &__block:not(:last-child) {
+            margin-bottom: $offset-main;
+        }
+
+        &__block-title {
+            color: $color-primary1;
+            @include H3_D;
+        }
+
+        &__block-list {
+            margin-top: $offset-secondary;
+        }
+
+        &__block-item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__block-link {
+            color: $color-primary1;
+            @include Body_Standart_1_Desktop_Regular;
+        }
+    }
+
+    @include mobile {
+        &__inner {
+            padding: 120px 0;
+            grid-column: 12 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__left-block {
+            grid-column: 12 span;
+            margin-bottom: $offset-secondary;
+        }
+
+        &__right-block {
+            grid-column: 12 span;
+        }
+
+        &__block:not(:last-child) {
+            margin-bottom: $offset-secondary;
+        }
+
+        &__block-title {
+            color: $color-primary1;
+            @include H3_M;
+        }
+
+        &__block-list {
+            margin-top: 15px;
+        }
+
+        &__block-item:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        &__block-link {
+            color: $color-primary1;
+            @include Body_Standart_1_Mobile_Regular;
+        }
+    }
+}

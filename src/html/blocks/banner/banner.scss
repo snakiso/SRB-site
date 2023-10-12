@@ -1,0 +1,69 @@
+.banner {
+    background-image: url(../img/other/banner.png);
+    background-position: center;
+    background-size: cover;
+
+
+    @include desktop {
+        padding: 150px 0;
+
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__text {
+            @include Body_Accent1_Desktop;
+            color: $color-primary1;
+
+            &_accent {
+                color: $color-accent;
+            }
+
+            &:last-child {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    @include tablet {
+        padding: 100px 0;
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__text {
+            @include Body_Accent1_Desktop;
+            color: $color-primary1;
+
+            &_accent {
+                color: $color-accent;
+            }
+
+            &_padding {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    @include mobile {
+        padding: 60px 0;
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__text {
+            @include Body_Accent1_Mobile;
+            color: $color-primary1;
+
+            &_accent {
+                color: $color-accent;
+            }
+
+            &:last-child {
+                padding-top: 60px;
+            }
+        }
+    }
+}

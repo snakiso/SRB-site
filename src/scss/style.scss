@@ -32,6 +32,8 @@ body {
 
 
 @import '../scss/layout';
+@import '../scss/titles';
+@import '../scss/texts';
 @import '../scss/wrapper';
 @import '../scss/animation';
 @import '../html/common/header/header';
@@ -39,3 +41,9 @@ body {
 @import '../html/blocks/nav/nav';
 @import '../html/blocks/hamburger/humburger';
 @import '../html/blocks/contact/contact';
+@import '../html/blocks/hero/hero';
+@import '../html/blocks/button/button';
+@import '../html/common/menu/menu';
+@import '../html/blocks/about/about';
+@import '../html/blocks/banner/banner';
+@import '../html/blocks/control/control';

@@ -1,0 +1,56 @@
+.button {
+    font-family: 'Wix Madefor Display', sans-serif;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    @include Body_Standart_1_Desktop_Regular;
+
+    width: fit-content;
+
+    &_accent {
+        background-color: $color-accent;
+        color: $color-primary1;
+    }
+
+    &_white {
+        background-color: $color-primary1;
+        color: $color-primary;
+    }
+
+
+    @include desktop {
+        padding: 14px 30px;
+        transition: ease-in .2s;
+
+        &__text {
+            transition: ease-in .2s;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            padding: 14px 15px 14px 30px;
+
+            .button__text {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    @include tablet {
+        padding: 14px 25px;
+
+        &__text {
+            margin-right: 10px;
+        }
+    }
+
+    @include mobile {
+        padding: 12px 20px;
+
+        &__text {
+            margin-right: 10px;
+        }
+    }
+}

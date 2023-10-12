@@ -1,0 +1,85 @@
+.control {
+    background-color: $color-accent2;
+    color: $color-primary1;
+
+    @include desktop {
+        &__wrapper {
+            background-image: url(../img/other/control-bg.png);
+            background-repeat: no-repeat;
+            background-position-y: top;
+            background-position-x: left;
+        }
+
+        &__inner {
+            padding: 150px 0;
+
+            grid-column: 2/10 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 3 span;
+        }
+
+        &__content {
+            grid-column: 4/7 span;
+            margin-left: $grid-col;
+        }
+
+        &__text {
+            margin-top: $offset-secondary;
+            margin-bottom: $offset-middle;
+        }
+    }
+
+    @include tablet {
+
+        &__inner {
+            padding: 100px 0;
+            grid-column: 12 span;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 3 span;
+        }
+
+        &__content {
+            grid-column: 4/9 span;
+            margin-left: $grid-col;
+        }
+
+        &__text {
+            margin-top: $offset-secondary;
+            margin-bottom: $offset-middle;
+        }
+    }
+
+    @include mobile {
+
+        &__inner {
+            padding: 100px 0;
+            grid-column: 12 span;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 12 span;
+        }
+
+        &__content {
+            grid-column: 12 span;
+        }
+
+        &__text {
+            margin-top: $offset-secondary;
+            margin-bottom: $offset-middle;
+        }
+    }
+}

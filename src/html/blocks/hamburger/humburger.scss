@@ -28,6 +28,7 @@
                 height: 2px;
                 background-color: $color-primary;
                 left: -3px;
+                transition: ease-in .2s;
             }
 
             &::before {
@@ -36,6 +37,20 @@
 
             &::after {
                 bottom: 5px;
+            }
+        }
+
+        &.active {
+            .hamburger__inner {
+                &::before {
+                    top: 19px;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    bottom: 13px;
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
@@ -108,3 +123,4 @@
         }
     }
 }
+
