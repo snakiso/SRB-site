@@ -1,0 +1,67 @@
+.contact-us {
+    background-color: $color-accent;
+
+    @include desktop {
+        padding: 90px 0;
+
+        &__inner {
+            grid-column: 2/10 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 5 span;
+            color: $color-primary1;
+            max-width: 430px;
+        }
+
+        &__form {
+            grid-column: 6/5 span;
+        }
+    }
+
+    @include tablet {
+        padding: 90px 0;
+
+        &__inner {
+            grid-column: 12 span;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 5 span;
+            color: $color-primary1;
+            max-width: 430px;
+        }
+
+        &__form {
+            grid-column: 6/5 span;
+        }
+    }
+
+    @include mobile {
+        padding: 60px 0;
+
+        &__inner {
+            grid-column: 12 span;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title {
+            grid-column: 12 span;
+            color: $color-primary1;
+            max-width: 430px;
+        }
+
+        &__form {
+            margin-top: 30px;
+            grid-column: 12 span;
+        }
+    }
+}

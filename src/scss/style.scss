@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
@@ -25,15 +25,16 @@ body {
   overflow-x: hidden;
 }
 
-.page{
+.page {
   position: relative;
- // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 
 @import '../scss/layout';
 @import '../scss/titles';
 @import '../scss/texts';
+@import '../scss/sliders';
 @import '../scss/wrapper';
 @import '../scss/animation';
 @import '../html/common/header/header';
@@ -47,3 +48,8 @@ body {
 @import '../html/blocks/about/about';
 @import '../html/blocks/banner/banner';
 @import '../html/blocks/control/control';
+@import '../html/blocks/catalog-slider/catalog-slider';
+@import '../html/blocks/card/card';
+@import '../html/blocks/news/news';
+@import '../html/blocks/contact-us/contact-us';
+@import '../html/blocks/form/form';
