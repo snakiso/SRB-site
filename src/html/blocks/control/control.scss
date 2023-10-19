@@ -2,6 +2,18 @@
     background-color: $color-accent2;
     color: $color-primary1;
 
+    &__line-box {
+        position: relative;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        width: 1500px;
+        height: 1px;
+        background: $color-accent;
+    }
+
     @include desktop {
         &__wrapper {
             background-image: url(../img/other/control-bg.png);
@@ -27,6 +39,7 @@
             grid-column: 4/7 span;
             margin-left: $grid-col;
         }
+
 
         &__text {
             margin-top: $offset-secondary;
@@ -71,6 +84,7 @@
 
         &__title {
             grid-column: 12 span;
+            margin-bottom: 30px;
         }
 
         &__content {

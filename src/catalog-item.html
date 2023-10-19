@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Флакон"
+})
+
+<body class="body">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="wrapper grid">
+                    <div class="breadcrumb__inner">
+                        <a href="#" class="breadcrumb__link">Главная</a>
+                        <a href="#" class="breadcrumb__link">Каталог</a>
+                        <a href="#" class="breadcrumb__link">Первичная медицинская упаковка</a>
+                        <a href="#" class="breadcrumb__link">Флакон медицинский для лекарственных средств полимерный из полиэтилена объемом 5 мл с винтовой горловиной</a>
+                    </div>
+                </div>
+
+            </div>
+            @@include('html/blocks/catalog-item/catalog-item.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+</body>
+<script src="./js/burger.js"></script>
+<script src="./js/swipers.js"></script>
+
+</html>

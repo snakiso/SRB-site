@@ -9,10 +9,9 @@
         &_inner {
             background-color: $color-primary1;
             padding: 44px 30px 16px 30px;
-            transition: ease-in .2s;
             position: absolute;
             flex-direction: column;
-            opacity: 0;
+            visibility: hidden;
             z-index: -1;
             top: 35px;
             right: 0;
@@ -38,7 +37,7 @@
 
             &:hover {
                 .nav__ul_inner {
-                    opacity: 1;
+                    visibility: visible;
                     z-index: 1;
                 }
             }

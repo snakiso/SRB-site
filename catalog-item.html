@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jQuery2.2.0.js?_v=20231019103844"></script>
+    <script src="js/ScrollAnimations.js?_v=20231019103844"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231019103844"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231019103844">
+    <title>Флакон</title>
+</head>
+
+<body class="body">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231019103844"></script>
+    <div class="page">
+        <header class="header">
+    <div class="header__wrapper wrapper">
+        <img src="img/header/logo.svg" alt="">
+        <div class="header__nav">
+            <nav class="nav">
+                <div class="nav__inner">
+                    <ul class="nav__ul">
+                        <li class="nav__li nav__li_parent nav__li_dropdown">
+                            <a href="#" class="nav__a nav__a_upper">О компании</a>
+                            <ul class="nav__ul nav__ul_inner">
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Новости</a>
+                                </li>
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Статьи</a>
+                                </li>
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Реквизиты</a>
+                                </li>
+                            </ul>
+                            <div class="nav__arrow-box">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="arrow" d="M11.9998 1.44629L6.49976 6.55343L0.999756 1.44629"
+                                        stroke="black" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="nav__li nav__li_parent nav__li_dropdown">
+                            <a href="#" class="nav__a nav__a_upper">Каталог</a>
+                            <ul class="nav__ul nav__ul_inner">
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Первичная фармацевтическая полимерная
+                                        упаковка</a>
+                                </li>
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Комплектующие для упаковкиs</a>
+                                </li>
+                            </ul>
+                            <div class="nav__arrow-box">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="arrow" d="M11.9998 1.44629L6.49976 6.55343L0.999756 1.44629"
+                                        stroke="black" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="nav__li nav__li_parent">
+                            <a href="#" class="nav__a nav__a_upper">Производство</a>
+                        </li>
+                        <li class="nav__li nav__li_parent nav__li_dropdown">
+                            <a href="#" class="nav__a nav__a_upper">Контроль и качество </a>
+                            <ul class="nav__ul nav__ul_inner">
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Документы</a>
+                                </li>
+                            </ul>
+                            <div class="nav__arrow-box">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="arrow" d="M11.9998 1.44629L6.49976 6.55343L0.999756 1.44629"
+                                        stroke="black" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="nav__li nav__li_parent nav__li_dropdown">
+                            <a href="#" class="nav__a nav__a_upper">Заказать</a>
+                            <ul class="nav__ul nav__ul_inner">
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Как оформить заказ</a>
+                                </li>
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Условия доставки</a>
+                                </li>
+                                <li class="nav__li nav__li_inner">
+                                    <a href="" class="nav__a nav__a_dropdown">Условия оплаты</a>
+                                </li>
+                            </ul>
+                            <div class="nav__arrow-box">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="arrow" d="M11.9998 1.44629L6.49976 6.55343L0.999756 1.44629"
+                                        stroke="black" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="nav__li nav__li_parent">
+                            <a href="#" class="nav__a nav__a_upper">Сотрудничество</a>
+                        </li>
+                        <li class="nav__li nav__li_parent nav__li_last">
+                            <a href="#" class="nav__a nav__a_upper">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header__hamburger">
+            <button class="hamburger">
+                <div class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </div>
+            </button>
+        </div>
+    </div>
+</header>
+        <div class="menu">
+    <div class="wrapper grid">
+        <div class="menu__inner">
+            <div class="menu__left-block">
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">О компании</a>
+                    <ul class="menu__block-list">
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Новости</a>
+                        </li>
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Статьи</a>
+                        </li>
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Реквизиты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Каталог</a>
+                    <ul class="menu__block-list">
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Первичная фармацевтическая полимерная упаковка</a>
+                        </li>
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Комплектующие для упаковки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Производство</a>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Контроль и качество</a>
+                    <ul class="menu__block-list">
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Документы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu__right-block">
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Заказать</a>
+                    <ul class="menu__block-list">
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Как оформить заказ</a>
+                        </li>
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Условия доставки</a>
+                        </li>
+                        <li class="menu__block-item">
+                            <a class="menu__block-link" href="#">Условия оплаты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Сотрудничество</a>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__block-title">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="wrapper grid">
+                    <div class="breadcrumb__inner">
+                        <a href="#" class="breadcrumb__link">Главная</a>
+                        <a href="#" class="breadcrumb__link">Каталог</a>
+                        <a href="#" class="breadcrumb__link">Первичная медицинская упаковка</a>
+                        <a href="#" class="breadcrumb__link">Флакон медицинский для лекарственных средств полимерный из полиэтилена объемом 5 мл с винтовой горловиной</a>
+                    </div>
+                </div>
+
+            </div>
+            <section class="catalog-item">
+    <div class="wrapper grid">
+        <div class="catalog-item__inner">
+            <h3 class="catalog-item__title sm-title">
+                Флакон медицинский для лекарственных средств полимерный из полиэтилена объемом 5 мл с винтовой
+                горловиной
+            </h3>
+            <div class="catalog-item__own">
+                <div class="catalog-item__preview-box">
+                    <div class="catalog-item__preview-slider">
+                        <div class="catalog-item__preview-slider-wrapper swiper-wrapper">
+                            <div class="catalog-item__preview-slider-slide swiper-slide">
+                                <img src="img/catalog/1.jpg" alt="">
+                            </div>
+                            <div class="catalog-item__preview-slider-slide swiper-slide">
+                                <img src="img/catalog/2.jpg" alt="">
+                            </div>
+                            <div class="catalog-item__preview-slider-slide swiper-slide">
+                                <img src="img/catalog/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="catalog-item__slider-nav">
+                            <div class="catalog-item__slider-prev">
+                                <img src="img/icons/slider-arr-white-prev.svg" alt="">
+                            </div>
+                            <div class="catalog-item__slider-next">
+                                <img src="img/icons/slider-arr-white-next.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="catalog-item__button button button_accent button_download">
+                        <span class="button__text">Скачать паспорт изделия (pdf)</span>
+                        <img class="button__arrow" src="img/icons/download-button.svg" alt="">
+                    </a>
+                </div>
+                <div class="catalog-item__params">
+                    <div class="catalog-item__params-block">
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Артикул</span>
+                            <span class="p-own">ФВГ-5</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Материал</span>
+                            <span class="p-own">Полиэтилен</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Цвет</span>
+                            <span class="p-own">Белый, натуральный</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Масса изделия, г</span>
+                            <span class="p-own">3,00 ± 0,50</span>
+                        </div>
+                    </div>
+                    <div class="catalog-item__params-block">
+                        <span class="catalog-item__params-block-title">Основные размеры:</span>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Диаметр, мм</span>
+                            <span class="p-own">21,2±0,5</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Высота
+                                с горловиной,мм</span>
+                            <span class="p-own">42,4±0,5</span>
+                        </div>
+                    </div>
+                    <div class="catalog-item__params-block">
+                        <span class="catalog-item__params-block-title">Объем:</span>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Вместимость, см³</span>
+                            <span class="p-own">5</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Максимальная вместимость, см³</span>
+                            <span class="p-own">7,5</span>
+                        </div>
+                    </div>
+                    <div class="catalog-item__params-block">
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Тип упаковки</span>
+                            <span class="p-own">Короб</span>
+                        </div>
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Количество изделий
+                                в коробе, шт.</span>
+                            <span class="p-own">1000</span>
+                        </div>
+                    </div>
+                    <div class="catalog-item__params-block">
+                        <div class="catalog-item__params-box">
+                            <span class="catalog-item__param">Минимальная партия заказа, шт.</span>
+                            <span class="p-own">от 1000, информацию уточняйте
+                                у менеджеров</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-item__description">
+                <span class="catalog-item__description-title sm-title">Описание</span>
+                <p class="p-own">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero neque,
+                    accumsan vel dui sed, hendrerit
+                    vestibulum nisl.
+                    <br> Nullam in nibh porta, interdum dolor at, mollis ipsum. Curabitur hendrerit neque velit, eu
+                    tempor
+                </p>
+            </div>
+            <section class="other-products">
+    <h3 class="sm-title">Комплектующие</h3>
+    <div class="other-products__block">
+        <a href="#" class="other-products__item">
+            <img src="img/other/1.jpg" alt="" class="other-products__item-img">
+            <span class="other-products__item-title">Насадка-дозатор</span>
+        </a>
+        <a href="#" class="other-products__item">
+            <img src="img/other/2.jpg" alt="" class="other-products__item-img">
+            <span class="other-products__item-title">Крышка, навинчиваемая
+                с контролем первого вскрытия</span>
+        </a>
+    </div>
+</section>
+            <section class="question">
+    <div class="question__inner">
+        <span class="sm-title">У Вас остались вопросы?</span>
+        <p class="question__p p-own">Свяжитесь с нами, и мы с удовольствием на них ответим</p>
+        <a href="#" class="button button_white">
+            <span class="button__text">Задать вопрос</span>
+            <img class="button__arrow" src="img/icons/btn-arr-black.svg" alt="">
+        </a>
+    </div>
+</section>
+            <a href="#" class="back-link">
+    <img src="img/icons/back-link-arr.svg" alt="">
+    Назад в каталог
+</a>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="wrapper grid">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__title-box">
+                    <img src="img/icons/footer-logo.svg" alt="">
+                    <span class="footer__title">Производство первичной фармацевтической полимерной&nbsp;упаковки</span>
+                </div>
+                <div class="footer__content">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-block">
+                            <a href="" class="footer__nav-link">О компании</a>
+                            <a href="" class="footer__nav-link">Каталог</a>
+                        </div>
+                        <div class="footer__nav-block">
+                            <a href="" class="footer__nav-link">Производство</a>
+                            <a href="" class="footer__nav-link">Контроль и качество</a>
+                        </div>
+                        <div class="footer__nav-block">
+                            <a href="" class="footer__nav-link">Заказать</a>
+                            <a href="" class="footer__nav-link">Сотрудничество</a>
+                        </div>
+                    </nav>
+                    <div class="footer__contacts-block">
+                        <span class="footer__contacts-block-title">Контакты</span>
+                        <div class="footer__contacts-line">
+                            <a href="#" class="contact contact_tel">+7 (495) 231-34-25</a>
+                            <a href="#" class="contact contact_tel">+7 (903) 129-58-53</a>
+                            <a href="#" class="contact contact_mail">flakon-farma@srp-gr.ru</a>
+                        </div>
+                        <span class="footer__address contact contact_loc">42715, Московская обл., Ленинский г.о., г.
+                            Видное, п. Совхоза
+                            им. Ленина,
+                            тер. «Восточная промзона», влд. 3, стр. 7</span>
+                    </div>
+                    <div class="footer__other-places">
+                        <div class="footer__other-places-block">
+                            <span class="footer__other-places-title">Мы в соц. сетях</span>
+                            <div class="footer__icon-links-line">
+                                <a href="#" class="footer__icon-link">
+                                    <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="vk"
+                                            d="M17.5038 16.8909V12.2076C20.6495 12.6872 21.644 15.1629 23.6471 16.8909H28.7537C27.477 14.0407 25.5721 11.5161 23.1816 9.50619C25.0155 6.98114 26.9622 4.6042 27.9144 1H23.2733C21.4536 3.75781 20.4944 6.98819 17.5038 9.11827V1H10.768L12.3761 2.98901V10.0775C9.76639 9.77422 8.00309 4.99918 6.09166 1H1.24609C3.0094 6.40277 6.7194 18.2592 17.5038 16.8909Z"
+                                            stroke="white" stroke-width="1.3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__icon-link">
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="YouTube"
+                                            d="M15.3155 8.54531L10.9598 6.03731C10.704 5.89008 10.414 5.81269 10.1189 5.8129C9.82385 5.81312 9.534 5.89094 9.27848 6.03855C9.02295 6.18616 8.81074 6.39838 8.66314 6.6539C8.51553 6.90943 8.43771 7.19928 8.4375 7.49438V12.508C8.43394 13.1089 8.75456 13.6646 9.27588 13.9615C9.53147 14.1108 9.82208 14.1897 10.1181 14.1901C10.4141 14.1905 10.7049 14.1125 10.9609 13.9639L15.3155 11.4559C15.5713 11.3088 15.7838 11.0969 15.9316 10.8415C16.0794 10.5861 16.1572 10.2963 16.1572 10.0012C16.1572 9.70612 16.0794 9.41627 15.9316 9.16087C15.7838 8.90548 15.5713 8.69356 15.3155 8.5465V8.54531ZM14.7218 10.4239L10.3684 12.9331C10.2929 12.9774 10.2071 13.0007 10.1196 13.0007C10.0321 13.0007 9.94625 12.9774 9.87081 12.9331C9.79532 12.8904 9.73269 12.8282 9.68945 12.753C9.64621 12.6778 9.62395 12.5924 9.625 12.5056V7.49438C9.62417 7.40784 9.64652 7.32266 9.68975 7.24769C9.73298 7.17272 9.7955 7.11069 9.87081 7.06806C9.9456 7.02255 10.0315 6.99847 10.119 6.99847C10.2065 6.99847 10.2924 7.02255 10.3672 7.06806L14.7218 9.57725C14.7968 9.61966 14.8593 9.68126 14.9028 9.75575C14.9463 9.83024 14.9692 9.91494 14.9692 10.0012C14.9692 10.0874 14.9463 10.1721 14.9028 10.2466C14.8593 10.3211 14.7968 10.3815 14.7218 10.4239ZM20.3125 0.5H3.6875C2.74296 0.500943 1.83737 0.87658 1.16947 1.54447C0.50158 2.21237 0.125943 3.11796 0.125 4.0625V15.9375C0.125943 16.882 0.50158 17.7876 1.16947 18.4555C1.83737 19.1234 2.74296 19.4991 3.6875 19.5H20.3125C21.257 19.4991 22.1626 19.1234 22.8305 18.4555C23.4984 17.7876 23.8741 16.882 23.875 15.9375V4.0625C23.8741 3.11796 23.4984 2.21237 22.8305 1.54447C22.1626 0.87658 21.257 0.500943 20.3125 0.5ZM22.6875 15.9375C22.6866 16.5671 22.436 17.1706 21.9908 17.6158C21.5456 18.061 20.9421 18.3116 20.3125 18.3125H3.6875C3.0579 18.3116 2.45436 18.061 2.00916 17.6158C1.56397 17.1706 1.31344 16.5671 1.3125 15.9375V4.0625C1.31344 3.4329 1.56397 2.82936 2.00916 2.38416C2.45436 1.93897 3.0579 1.68844 3.6875 1.6875H20.3125C20.9421 1.68844 21.5456 1.93897 21.9908 2.38416C22.436 2.82936 22.6866 3.4329 22.6875 4.0625V15.9375Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__other-places-block">
+                            <span class="footer__other-places-title">Написать нам</span>
+                            <div class="footer__icon-links-line">
+                                <a href="#" class="footer__icon-link">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Group 2318">
+                                            <path id="Vector"
+                                                d="M7.82021 5.21158C8.0047 5.21662 8.20936 5.22671 8.40393 5.6582C8.53297 5.94552 8.74973 6.4748 8.92716 6.9063C9.06528 7.24201 9.17819 7.51825 9.20642 7.5747C9.27095 7.70375 9.31127 7.85195 9.22659 8.02636L9.19836 8.08483C9.14057 8.22029 9.06237 8.34608 8.96648 8.45785C8.91775 8.51441 8.86969 8.57154 8.82232 8.62924C8.73662 8.73409 8.65093 8.83692 8.57834 8.90951C8.44829 9.03855 8.3142 9.17768 8.46341 9.43576C8.61363 9.69385 9.13686 10.5427 9.91012 11.2273C10.4761 11.7368 11.1249 12.146 11.8286 12.437C11.8992 12.4673 11.9567 12.4925 12 12.5137C12.2591 12.6427 12.4134 12.6225 12.5626 12.4491C12.7128 12.2747 13.2108 11.694 13.3862 11.4359C13.5556 11.1779 13.729 11.2182 13.969 11.3069C14.2089 11.3966 15.4852 12.0227 15.7443 12.1507L15.8885 12.2213C16.069 12.307 16.1909 12.3665 16.2434 12.4532C16.3079 12.5631 16.3079 13.0782 16.0942 13.6851C15.8744 14.29 14.8168 14.8707 14.3379 14.9151L14.2018 14.9312C13.7623 14.9837 13.2058 15.0522 11.2217 14.2709C8.77594 13.3091 7.16188 10.9238 6.83625 10.4409C6.81886 10.4151 6.80105 10.3895 6.78281 10.3643L6.77676 10.3562C6.62856 10.1576 5.72021 8.94277 5.72021 7.68863C5.72021 6.48892 6.312 5.86386 6.58118 5.57956L6.62856 5.52915C6.71569 5.43073 6.82215 5.35129 6.9413 5.29579C7.06046 5.24029 7.18976 5.20991 7.32117 5.20654C7.49558 5.20654 7.671 5.20654 7.82021 5.21158Z"
+                                                fill="white" />
+                                            <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.06175 19.4887C1.04276 19.5571 1.04212 19.6292 1.05992 19.6979C1.07771 19.7666 1.11331 19.8293 1.16311 19.8798C1.21291 19.9304 1.27515 19.9668 1.34356 19.9856C1.41197 20.0044 1.48412 20.0048 1.55273 19.9868L6.19731 18.773C7.67091 19.5711 9.32025 19.9893 10.9961 19.9898H11.0002C16.5309 19.9898 21.0394 15.5065 21.0394 9.99694C21.0429 8.68284 20.785 7.38116 20.2806 6.1677C19.7763 4.95423 19.0356 3.85322 18.1016 2.92875C17.1695 1.99648 16.0622 1.25778 14.8434 0.755154C13.6246 0.252528 12.3185 -0.00409751 11.0002 4.94686e-05C5.46942 4.94686e-05 0.960938 4.48232 0.960938 9.9919C0.960938 11.7451 1.42267 13.467 2.30179 14.9863L1.06175 19.4887ZM3.76059 15.3876C3.8139 15.1941 3.82816 14.9919 3.80254 14.7929C3.77692 14.5938 3.71194 14.4019 3.61138 14.2282C2.86548 12.941 2.47283 11.4796 2.47317 9.9919C2.47317 5.32413 6.29712 1.51229 11.0002 1.51229C13.2887 1.51229 15.424 2.39644 17.035 4.00042C17.8277 4.7844 18.4564 5.71842 18.8843 6.74798C19.3122 7.77754 19.5307 8.88201 19.5272 9.99694C19.5272 14.6647 15.7032 18.4776 11.0002 18.4776H10.9951C9.5713 18.4768 8.1701 18.1213 6.91814 17.4432C6.5807 17.2605 6.18643 17.2129 5.81522 17.3101L3.03068 18.037L3.76059 15.3876Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__icon-link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Telegram"
+                                            d="M7.47553 18.6351C7.42521 18.6869 7.36357 18.7262 7.29545 18.7501C7.29046 18.7518 7.2858 18.7525 7.28127 18.7532C7.2781 18.7536 7.27499 18.7541 7.27188 18.7549C7.20094 18.778 7.12514 18.7819 7.0522 18.7662L7.47553 18.6351ZM7.47553 18.6351C7.47856 18.6316 7.48265 18.6297 7.48667 18.6278C7.49019 18.6262 7.49364 18.6246 7.49628 18.6219M7.47553 18.6351L7.49628 18.6219M7.28491 18.8032C7.20654 18.8282 7.12298 18.8324 7.0425 18.8152H7.03371L7.0339 18.8143C7.01829 18.8111 7.00687 18.8031 7.00254 18.8L7.00215 18.7997L6.99901 18.7975C6.91005 18.7702 6.83019 18.7191 6.76804 18.6497M7.28491 18.8032L6.80517 18.6163M7.28491 18.8032L7.28559 18.8031L7.2908 18.8023C7.29541 18.8016 7.30284 18.8004 7.31126 18.7976L7.31201 18.7973C7.38622 18.7713 7.45349 18.7287 7.50871 18.6727C7.51045 18.6719 7.5132 18.6706 7.51582 18.6691C7.51994 18.6668 7.52584 18.6631 7.53163 18.6573L7.53168 18.6573L7.53333 18.6555L10.3431 15.5539L14.452 18.7358C14.452 18.7358 14.4521 18.7359 14.4521 18.7359L14.4522 18.7359L14.4828 18.6964M7.28491 18.8032L19.4271 1.37915C19.6038 1.53982 19.7383 1.74205 19.8179 1.96795C19.9049 2.21469 19.9233 2.48043 19.8712 2.73681M6.76804 18.6497C6.768 18.6497 6.76796 18.6497 6.76792 18.6496L6.80517 18.6163M6.76804 18.6497C6.76808 18.6498 6.76813 18.6498 6.76817 18.6499L6.80517 18.6163M6.76804 18.6497C6.7271 18.6047 6.6946 18.5526 6.67208 18.496M6.80517 18.6163C6.76756 18.5749 6.73784 18.5269 6.71749 18.4748M6.67208 18.496C6.67248 18.4965 6.67226 18.4962 6.67209 18.4958L6.71749 18.4748M6.67208 18.496C6.67161 18.4954 6.67026 18.4937 6.66689 18.4895L6.66671 18.4892C6.66233 18.4838 6.65274 18.4718 6.64786 18.4551M6.67208 18.496C6.67169 18.495 6.6713 18.494 6.67091 18.493L6.71749 18.4748M6.71749 18.4748L6.64786 18.4551M6.64786 18.4551C6.64782 18.455 6.64777 18.4548 6.64772 18.4546L6.6958 18.4409L6.64794 18.4554L6.64786 18.4551ZM14.4828 18.6964C14.7345 18.8935 15.0447 19 15.3643 19C16.0564 19 16.6532 18.5154 16.7956 17.8394L19.8712 2.73681M14.4828 18.6964L10.3371 15.486M14.4828 18.6964L10.3371 15.486M19.8712 2.73681L19.9202 2.74678C19.9741 2.48153 19.9551 2.2066 19.8651 1.95132C19.7751 1.69603 19.6174 1.46997 19.409 1.29725L19.3271 1.22936V1.2349M19.8712 2.73681L19.3271 1.2349M19.3271 1.2349C19.1343 1.09617 18.9111 1.00449 18.6754 0.967907C18.4056 0.926021 18.1294 0.957938 17.8762 1.06027L0.983224 7.87988L0.982937 7.88C0.700573 7.99604 0.460177 8.19521 0.293664 8.45107C0.12715 8.70694 0.0423945 9.00739 0.0506479 9.31256C0.0589013 9.61773 0.159774 9.91316 0.339874 10.1597C0.519974 10.4061 0.770783 10.592 1.05901 10.6926L1.05909 10.6927L4.68006 11.9496L19.3271 1.2349ZM7.49628 18.6219L10.3371 15.486M7.49628 18.6219L10.3371 15.486M7.05051 16.1879L7.67734 13.1406C7.67734 13.1406 7.67734 13.1406 7.67734 13.1406L7.67736 13.1405L7.72633 13.1506C7.74472 13.0602 7.78932 12.9772 7.85456 12.912L7.05051 16.1879ZM7.05051 16.1879L5.72889 11.8171L12.3008 8.39415L7.81922 12.8767M18.8972 2.5411L15.8228 17.6397L15.8226 17.6397C15.8067 17.7168 15.7712 17.7885 15.7195 17.8479C15.6678 17.9073 15.6017 17.9524 15.5276 17.9789L15.5265 17.9794C15.4544 18.0071 15.3763 18.0156 15.2999 18.004C15.2235 17.9924 15.1514 17.9612 15.0908 17.9133L15.0904 17.913L10.5996 14.4348L10.5996 14.4348C10.4957 14.3546 10.3655 14.3165 10.2348 14.3281C10.1042 14.3397 9.98272 14.4001 9.89463 14.4973C9.89462 14.4973 9.89461 14.4973 9.89461 14.4973L8.04038 16.5408L8.6661 13.5034L15.4336 6.73496L15.4337 6.7349C15.5215 6.64682 15.5749 6.53025 15.5843 6.40624C15.5937 6.28223 15.5585 6.15894 15.485 6.05862C15.4115 5.9583 15.3045 5.88756 15.1835 5.85916C15.0624 5.83076 14.9351 5.84658 14.8247 5.90375L14.8246 5.90381L5.07297 10.9833L1.40022 9.70626L1.39947 9.70601C1.31143 9.67693 1.23463 9.62113 1.17978 9.54637C1.12492 9.47161 1.09474 9.38161 1.09342 9.2889L1.09345 9.2889L1.09338 9.28735C1.08915 9.1937 1.11417 9.10105 1.16497 9.02226C1.21578 8.94347 1.28984 8.88244 1.3769 8.84764L1.37706 8.84758L18.2672 2.02796L18.2681 2.02761C18.3461 1.99448 18.4317 1.98376 18.5155 1.99667C18.5992 2.00957 18.6777 2.04559 18.7421 2.10068L18.7421 2.10069L18.7432 2.10155C18.807 2.15322 18.8553 2.22162 18.8825 2.29912C18.9097 2.37662 18.9149 2.46016 18.8974 2.54042L18.8972 2.5411Z"
+                                            fill="none" stroke="white" stroke-width=".5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="wrapper grid">
+            <div class="footer__bottom-inner">
+                <span>© 2023 SRP Group. Все права защищены.</span>
+                <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+                <a class="footer__bottom-link" href="#">Разработка сайта: projectroom</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+</body>
+<script src="./js/burger.js?_v=20231019103844"></script>
+<script src="./js/swipers.js?_v=20231019103844"></script>
+
+</html>

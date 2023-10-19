@@ -62,6 +62,14 @@
         width: 20px;
         height: 20px;
         accent-color: $color-accent;
+        appearance: none;
+        border: 1px solid white;
+
+        &:checked{
+            border: none;
+            background-image: url(../img/icons/checkbox.svg);
+            background-size: cover;
+        }
     }
 
     .email-label.js-active {

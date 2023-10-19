@@ -1,0 +1,64 @@
+.question {
+    @include desktop {
+        position: relative;
+        height: 250px;
+        margin-bottom: 90px;
+        color: white;
+
+        &__inner {
+            padding: 40px 0 40px 30px;
+            width: 1500px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background-color: $color-accent;
+            background-image: url(../img/other/control-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__p {
+            margin: 30px 0;
+        }
+    }
+
+    @include tablet {
+        position: relative;
+        height: 250px;
+        margin-bottom: 90px;
+        color: white;
+
+        &__inner {
+            padding: 40px 15px 40px 15px;
+            width: 1500px;
+            height: 100%;
+            position: absolute;
+            left: -15px;
+            background-color: $color-accent;
+        }
+
+        &__p {
+            margin: 30px 0;
+        }
+    }
+
+    @include mobile {
+        position: relative;
+        height: 220px;
+        margin-bottom: 30px;
+        color: white;
+
+        &__inner {
+            padding: 30px 15px 30px 15px;
+            width: calc(100% + 30px);
+            height: 100%;
+            position: absolute;
+            left: -15px;
+            background-color: $color-accent;
+        }
+
+        &__p {
+            margin: 20px 0;
+        }
+    }
+}

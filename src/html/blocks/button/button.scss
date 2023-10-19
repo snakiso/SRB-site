@@ -29,6 +29,26 @@
             margin-right: 10px;
         }
 
+        &_download {
+            padding: 8px 12px;
+            flex-direction: row-reverse;
+
+            .button__text {
+                margin-left: 10px;
+                margin-right: auto;
+            }
+
+            &:hover {
+                padding: 8px 12px !important;
+
+                .button__text {
+                    margin-left: 10px !important;
+                    margin-right: auto !important;
+                }
+            }
+
+        }
+
         &:hover {
             padding: 14px 15px 14px 30px;
 
@@ -36,6 +56,8 @@
                 margin-right: 25px;
             }
         }
+
+
     }
 
     @include tablet {

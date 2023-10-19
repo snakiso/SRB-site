@@ -1,6 +1,4 @@
 .catalog-slider {
-    padding-top: 60px;
-
     @include desktop {
         &__inner {
             grid-column: 2/11 span;

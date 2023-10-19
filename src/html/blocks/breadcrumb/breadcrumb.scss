@@ -1,0 +1,72 @@
+.breadcrumb {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+
+    &::after {
+        content: "";
+        width: 80px;
+        height: 100%;
+        background: linear-gradient(270deg, white, rgba(255, 255, 255, 0));
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+
+    &__link {
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+        position: relative;
+
+        &:not(:last-child) {
+            padding-right: 16px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 6px;
+                right: 4px;
+                top: 50%;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+                transform: rotate(-45deg) translateY(-50%);
+            }
+        }
+    }
+
+    @include desktop {
+        margin: 30px 0;
+
+        &__inner {
+            grid-column: 2/10 span;
+            display: flex;
+        }
+
+
+    }
+
+    @include tablet {
+        margin: 20px 0;
+
+        &__inner {
+            grid-column: 12 span;
+            display: flex;
+        }
+
+
+    }
+
+    @include mobile {
+        margin: 15px 0;
+
+        &__inner {
+            grid-column: 12 span;
+            display: flex;
+        }
+
+
+    }
+}

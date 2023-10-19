@@ -43,3 +43,108 @@ $(document).ready(function () {
 $(window).on('resize', function () {
     initSwiperCategory();
 }); //Запуск функции при изменении размера
+
+const swiper2 = new Swiper('.catalog-item__preview-slider', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.catalog-item__slider-next',
+        prevEl: '.catalog-item__slider-prev',
+    },
+
+});
+
+const swiper3 = new Swiper('.advantages__slider-1', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.advantages__slider-1-prev',
+        prevEl: '.advantages__slider-1-next',
+    },
+
+});
+
+const swiper4 = new Swiper('.advantages__slider-2', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.advantages__slider-2-prev',
+        prevEl: '.advantages__slider-2-next',
+    },
+
+});
+
+const swiper5 = new Swiper('.advantages__slider-3', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.advantages__slider-3-prev',
+        prevEl: '.advantages__slider-3-next',
+    },
+
+});
+
+const swiper6 = new Swiper('.advantages__slider-4', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.advantages__slider-4-prev',
+        prevEl: '.advantages__slider-4-next',
+    },
+
+});

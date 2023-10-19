@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Каталог"
+})
+
+<body class="body">
+
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="wrapper grid">
+                    <div class="breadcrumb__inner">
+                        <a href="#" class="breadcrumb__link">Главная</a>
+                        <a href="#" class="breadcrumb__link">Каталог</a>
+                    </div>
+                </div>
+
+            </div>
+            @@include('html/blocks/catalog/catalog.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+</body>
+<script src="./js/burger.js"></script>
+<script src="./js/tabs.js"></script>
+
+</html>

@@ -19,7 +19,7 @@
     }
 
     @include desktop {
-        padding: 150px 0;
+        padding: 130px 0;
 
         &__inner {
             grid-column: 2/10 span;
@@ -33,7 +33,7 @@
         }
 
         &__top {
-            margin-bottom: 150px;
+            margin-bottom: 155px;
         }
 
         &__name {
@@ -158,7 +158,7 @@
 
         &__contacts {
             grid-column: 12 span;
-            margin-top: 80px;
+            margin-top: 70px;
 
             .contact:not(:last-child) {
                 margin-bottom: $offset-secondary;

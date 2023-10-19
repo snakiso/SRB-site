@@ -1,0 +1,234 @@
+.documents {
+    &__img {
+        width: 100%;
+    }
+
+    @include desktop {
+
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__card {
+            padding: 15px 15px 0 15px;
+            border: 1px solid $color-secondary1;
+            margin-bottom: 90px;
+
+            &_accent {
+                background-color: $color-accent;
+                color: $color-primary1;
+                background-image: url(../img/other/pdf.svg);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: 70px;
+
+                .documents__card-info-title {
+                    color: $color-primary1;
+                    opacity: .6;
+                }
+
+                .documents__card-info-text {
+                    color: $color-primary1;
+                }
+            }
+        }
+
+        &__card-title {
+            @include Body_Standart_1_Desktop_Regular;
+            margin-bottom: 20px;
+            max-width: 260px;
+        }
+
+        &__card-info {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__card-info-title {
+            @include Body_Standart_2_Desktop_Regular;
+            color: #696969;
+
+        }
+
+        &__card-info-text {
+            @include Body_Standart_2_Desktop_Regular;
+            color: $color-primary;
+
+        }
+
+        &__card-text {
+            font-size: 14px;
+            font-weight: 400;
+            max-width: 260px;
+            min-height: 110px;
+
+            &_sout {
+                min-height: 10px;
+            }
+        }
+
+        &__card-img {
+            display: block;
+            margin: auto;
+            padding: 10px 10px 0 10px;
+            border-top: 1px solid $color-secondary1;
+            border-left: 1px solid $color-secondary1;
+            border-right: 1px solid $color-secondary1;
+            margin-top: 20px;
+        }
+    }
+
+    @include tablet {
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__card {
+            padding: 15px 15px 0 15px;
+            border: 1px solid $color-secondary1;
+            margin-bottom: 70px;
+
+            &_accent {
+                background-color: $color-accent;
+                color: $color-primary1;
+                background-image: url(../img/other/pdf.svg);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: 70px;
+
+                .documents__card-info-title {
+                    color: $color-primary1;
+                    opacity: .6;
+                }
+
+                .documents__card-info-text {
+                    color: $color-primary1;
+                }
+            }
+        }
+
+        &__card-title {
+            @include Body_Standart_1_Mobile_Regular;
+            margin-bottom: 20px;
+            max-width: 260px;
+        }
+
+        &__card-info {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__card-info-title {
+            @include Body_Standart_2_Mobile_Regular;
+            color: #696969;
+
+        }
+
+        &__card-info-text {
+            @include Body_Standart_2_Mobile_Regular;
+            color: $color-primary;
+
+        }
+
+        &__card-text {
+            font-size: 14px;
+            font-weight: 400;
+            max-width: 260px;
+            min-height: 110px;
+
+            &_sout {
+                min-height: 10px;
+            }
+        }
+
+        &__card-img {
+            display: block;
+            margin: auto;
+            padding: 10px 10px 0 10px;
+            border-top: 1px solid $color-secondary1;
+            border-left: 1px solid $color-secondary1;
+            border-right: 1px solid $color-secondary1;
+            margin-top: 20px;
+        }
+    }
+
+    @include mobile {
+
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__card {
+            padding: 15px 15px 0 15px;
+            border: 1px solid $color-secondary1;
+            margin-bottom: 60px;
+
+            &_accent {
+                background-color: $color-accent;
+                color: $color-primary1;
+                background-image: url(../img/other/pdf.svg);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: 70px;
+
+                .documents__card-info-title {
+                    color: $color-primary1;
+                    opacity: .6;
+                }
+
+                .documents__card-info-text {
+                    color: $color-primary1;
+                }
+            }
+        }
+
+        &__card-title {
+            @include Body_Standart_1_Desktop_Regular;
+            margin-bottom: 20px;
+        }
+
+        &__card-info {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__card-info-title {
+            @include Body_Standart_2_Desktop_Regular;
+            color: #696969;
+
+        }
+
+        &__card-info-text {
+            @include Body_Standart_2_Desktop_Regular;
+            color: $color-primary;
+
+        }
+
+        &__card-text {
+            font-size: 14px;
+            font-weight: 400;
+            min-height: 110px;
+
+            &_sout {
+                min-height: 10px;
+            }
+        }
+
+        &__card-img {
+            display: block;
+            margin: auto;
+            padding: 10px 10px 0 10px;
+            border-top: 1px solid $color-secondary1;
+            border-left: 1px solid $color-secondary1;
+            border-right: 1px solid $color-secondary1;
+            margin-top: 20px;
+        }
+    }
+
+
+}
