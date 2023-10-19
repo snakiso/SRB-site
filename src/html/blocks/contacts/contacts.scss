@@ -1,5 +1,9 @@
 .contacts {
 
+    &__wrapper {
+        position: initial;
+    }
+
     @include desktop {
         padding: 110px 0 0 0;
 

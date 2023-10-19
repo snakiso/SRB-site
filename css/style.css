@@ -704,6 +704,10 @@ body {
   margin-bottom: 15px;
 }
 
+.contacts__wrapper {
+  position: initial;
+}
+
 .breadcrumb {
   overflow: hidden;
   position: relative;
