@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Index"
+})
+
+<body class="body">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/hero/hero-video.html',{})
+            @@include('html/blocks/about/about-numbers.html',{})
+            @@include('html/blocks/banner/banner.html',{})
+            @@include('html/blocks/about/about-text.html',{})
+            @@include('html/blocks/control/control.html',{})
+            @@include('html/blocks/advantages/advantages.html',{})
+            @@include('html/blocks/catalog-slider/catalog-slider.html',{})
+            @@include('html/blocks/news/news.html',{})
+            @@include('html/blocks/contact-us/contact-us.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+</body>
+<script src="./js/video.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/swipers.js"></script>
+
+</html>

@@ -148,3 +148,24 @@ const swiper6 = new Swiper('.advantages__slider-4', {
     },
 
 });
+
+const swiper7 = new Swiper('.hero-slider', {
+    // Optional parameters
+    loop: false,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+
+    breakpoints: {
+        // when window width is >= 320px
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 0
+        },
+    },
+    // If we need pagination
+    navigation: {
+        nextEl: '.hero-slider-next',
+        prevEl: '.hero-slider-prev',
+    },
+
+});
