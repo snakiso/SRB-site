@@ -1,0 +1,41 @@
+.lg-title {
+    @include desktop {
+            @include H1_D;
+        }
+    
+        @include tablet {
+            @include H1_D;
+        }
+    
+        @include mobile {
+            @include H1_M;
+        }
+}
+
+.md-title {
+    @include desktop {
+        @include H2_D;
+    }
+
+    @include tablet {
+        @include H2_D;
+    }
+
+    @include mobile {
+        @include H2_M;
+    }
+}
+
+.sm-title {
+    @include desktop {
+            @include H3_D;
+        }
+    
+        @include tablet {
+            @include H3_D;
+        }
+    
+        @include mobile {
+            @include H3_M;
+        }
+}

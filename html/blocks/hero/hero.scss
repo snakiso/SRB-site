@@ -1,0 +1,305 @@
+.hero {
+
+    color: $color-primary1;
+
+    &__start-video-text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__play {
+        position: relative;
+        cursor: pointer;
+        width: 58px;
+        height: 58px;
+        background: none;
+        border: 1px solid #D3D3D3;
+        border-radius: 50%;
+
+
+
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        width: 70px;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+
+    &__counter {
+        overflow: hidden;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__counter-inner {
+        display: flex;
+        flex-direction: column;
+        transition: all .2s;
+    }
+
+    &__swiper-wrapper{
+        position: relative;
+        z-index: 10;
+    }
+
+    @include desktop {
+
+        &__slide {
+            padding: 130px 0;
+        }
+
+        &__inner {
+            grid-column: 2/10 span;
+            min-height: 470px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__top,
+        &__bottom {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__top {
+            flex-grow: 1;
+        }
+
+        &__name {
+            grid-column: 2 span;
+            @include Body_Standart_0_Desktop_Regular;
+        }
+
+        &__title {
+            grid-column: 4/7 span;
+            margin-left: $grid-col;
+        }
+
+        &__contacts {
+            grid-column: 3 span;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .contact:not(:last-child) {
+                margin-bottom: $offset-secondary;
+            }
+        }
+
+        &__buttons-block {
+            grid-column: 4/7 span;
+            margin-left: $grid-col;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        &__start-video {
+            display: flex;
+            align-items: center;
+        }
+
+        &__play {
+            margin-left: $offset-secondary;
+
+            &:hover {
+                animation: play-button 1s ease;
+
+                .hero__play-inner {
+                    animation: play-button-inner 1s ease;
+                }
+            }
+        }
+
+        &__play-inner {
+            position: absolute;
+            content: '';
+            width: 58px;
+            height: 58px;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__nav {
+            z-index: 15;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            bottom: 50px;
+            right: 20%;
+
+            .hero-slider-next,
+            .hero-slider-prev {
+                cursor: pointer;
+                height: fit-content;
+
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+
+        &__slide {
+            padding: 120px 0;
+        }
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__top,
+        &__bottom {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__top {
+            margin-bottom: 120px;
+        }
+
+        &__name {
+            display: block;
+            grid-column: 3 span;
+            @include Body_Standart_0_Desktop_Regular;
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            grid-column: 12 span;
+        }
+
+        &__contacts {
+            grid-column: 4 span;
+
+            .contact:not(:last-child) {
+                margin-bottom: $offset-secondary;
+            }
+        }
+
+        &__buttons-block {
+            grid-column: 5/8 span;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        &__start-video {
+            margin-top: $offset-secondary;
+            display: flex;
+            align-items: center;
+        }
+
+        &__play {
+            margin-left: $offset-secondary;
+        }
+    }
+
+    @include mobile {
+
+        &__slide {
+            padding: 90px 0 15px 0;
+        }
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__top,
+        &__bottom {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__top {
+            margin-bottom: 30px;
+        }
+
+        &__name {
+            display: block;
+            margin-bottom: 16px;
+            grid-column: 12 span;
+            @include Body_Standart_0_Mobile_Regular;
+        }
+
+        &__title {
+            grid-column: 12 span;
+        }
+
+        &__contacts {
+            grid-column: 12 span;
+            margin-top: 70px;
+
+            .contact:not(:last-child) {
+                margin-bottom: $offset-secondary;
+            }
+        }
+
+        &__buttons-block {
+            grid-row-start: 1;
+            grid-column: 12 span;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &__start-video {
+            margin-top: $offset-main;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        &__play {
+            margin-right: calc($offset-secondary/2);
+        }
+    }
+}
+
+@keyframes play-button-inner {
+    0% {
+        border: 1px solid #D3D3D3;
+    }
+
+    50% {
+        width: 70px;
+        height: 70px;
+        border: 10px solid rgba(211, 211, 211, 0.4);
+    }
+
+    100% {
+        width: 58px;
+        height: 58px;
+        border: 0px solid #D3D3D3;
+    }
+}
+
+@keyframes play-button {
+    0% {
+        border: 0px solid #D3D3D3;
+    }
+
+    50% {
+        border: 5px solid rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        border: 1px solid #D3D3D3;
+    }
+}

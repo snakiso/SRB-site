@@ -1,0 +1,46 @@
+<section class="contact-us fade-up" data-animation-container data-animation-start>
+    <div class="wrapper grid" data-animation-child>
+        <div class="contact-us__inner">
+            <div class="contact-us__img-block">
+                <img src="@img/other/contact-us-bg.png" alt="">
+            </div>
+            <h2 class="contact-us__title md-title">Cвяжитесь с нами
+                и&nbsp;мы ответим на все ваши вопросы</h2>
+            <form class="contact-us__form form" action="" method="post">
+                <div class="form__inputs-line">
+                    <div class="form__input-block">
+                        <input name="organization" type="text" class="form__input" required>
+                        <label class="form__input-label" for="organization">Организация*</label>
+                    </div>
+                    <div class="form__input-block">
+                        <input name="name" type="text" class="form__input" required>
+                        <label class="form__input-label" for="name">ФИО*</label>
+                    </div>
+                    <div class="form__input-block">
+                        <input name="tel" type="tel" class="form__input " required>
+                        <label class="form__input-label" for="tel">Номер телефона*</label>
+                    </div>
+                    <div class="form__input-block">
+                        <input name="mail" id="email" type="email" class="form__input " required>
+                        <label class="form__input-label  email-label" for="mail">Email*</label>
+                    </div>
+                    <div class="form__textarea form__input-block">
+                        <textarea name="message" class="form__input textarea" required></textarea>
+                        <label class="form__input-label" for="message">Сообщение*</label>
+                    </div>
+                </div>
+                <div class="form__accept-box">
+                    <input class="form__checkbox" type="checkbox" name="accept">
+                    <span class="form__accept-text">Согласен на обработку персональных данных</span>
+                </div>
+                <div class="form__submit-block">
+                    <div class="form__recaptcha"></div>
+                    <button class="form__submit button button_white" type="submit">
+                        <span class="button__text">Подробнее</span>
+                        <img class="button__arrow" src="@img/icons/btn-arr-black.svg" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

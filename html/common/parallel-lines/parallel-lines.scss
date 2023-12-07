@@ -1,0 +1,55 @@
+.parallel-lines {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &__wrapper {
+        height: 100%;
+    }
+
+
+    @include desktop {
+        &__line {
+            display: block;
+            background: rgba(230, 230, 230, 1);
+            width: 1px;
+            height: 100%;
+            grid-column: 2/1 span;
+
+            &_second {
+                grid-column: 5/1 span;
+                margin-left: $grid-col;
+            }
+        }
+    }
+
+    @include tablet {
+        &__line {
+            display: block;
+            background: rgba(230, 230, 230, 1);
+            width: 1px;
+            height: 100%;
+            grid-column: 1/1 span;
+
+            &_second {
+                display: none;
+            }
+        }
+    }
+
+    @include mobile {
+        &__line {
+            display: block;
+            background: rgba(230, 230, 230, 1);
+            width: 1px;
+            height: 100%;
+            grid-column: 1/1 span;
+
+            &_second {
+                display: none;
+            }
+        }
+    }
+}

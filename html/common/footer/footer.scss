@@ -1,0 +1,325 @@
+.footer {
+    background-color: $color-accent2;
+    color: $color-primary1;
+    position: relative;
+    z-index: 12;
+    @include desktop {
+        padding: 75px 0;
+
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__top {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title-box {
+            grid-column: 3 span;
+        }
+
+        &__title {
+            display: block;
+            @include Body_Standart_2_Desktop-Semibold;
+            color: $color-primary1;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+
+        &__content {
+            grid-column: 4/7 span;
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 690px;
+        }
+
+        &__nav-link {
+            @include Body_Standart_1_Desktop_Regular;
+            display: block;
+            color: $color-primary1;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__contacts-block {
+            margin: 60px 0;
+        }
+
+        &__contacts-line {
+            display: flex;
+            margin: 20px 0;
+
+            .contact {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__address {
+            max-width: 600px;
+        }
+
+        &__other-places {
+            display: flex;
+            max-width: 380px;
+            justify-content: space-between;
+        }
+
+        &__other-places-title {
+            display: block;
+            opacity: .6;
+            margin-bottom: 16px;
+        }
+
+        &__icon-link {
+            &:not(:last-child) {
+                margin-right: $offset-secondary;
+            }
+        }
+
+        &__bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.30);
+            margin-top: 35px;
+            padding-top: 40px;
+        }
+
+        &__bottom-inner {
+            display: flex;
+            justify-content: space-between;
+            grid-column: 2/10 span;
+        }
+
+        &__bottom-link {
+            display: block;
+            color: $color-primary1;
+            text-decoration-line: underline;
+        }
+    }
+
+    @include tablet {
+        padding: 90px 0;
+
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__top {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title-box {
+            grid-column: 3 span;
+        }
+
+        &__title {
+            display: block;
+            @include Body_Standart_2_Desktop-Semibold;
+            color: $color-primary1;
+            text-transform: uppercase;
+            margin-top: $offset-secondary;
+        }
+
+        &__content {
+            margin-top: 40px;
+            grid-column: 10 span;
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nav-link {
+            @include Body_Standart_1_Desktop_Regular;
+            display: block;
+            color: $color-primary1;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__contacts-block {
+            margin: 60px 0;
+        }
+
+        &__contacts-line {
+            display: flex;
+            margin: 20px 0;
+
+            .contact {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__address {
+            max-width: 600px;
+        }
+
+        &__other-places {
+            display: flex;
+            max-width: 380px;
+            justify-content: space-between;
+        }
+
+        &__other-places-title {
+            display: block;
+            opacity: .6;
+            margin-bottom: 16px;
+        }
+
+        &__icon-link {
+            &:not(:last-child) {
+                margin-right: $offset-secondary;
+            }
+        }
+
+        &__bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.30);
+            margin-top: 40px;
+            padding-top: 40px;
+        }
+
+        &__bottom-inner {
+            display: flex;
+            flex-direction: column;
+            grid-column: 2/10 span;
+        }
+
+        &__bottom-link {
+            display: block;
+            color: $color-primary1;
+            text-decoration-line: underline;
+            margin-top: 15px;
+        }
+    }
+
+    @include mobile {
+        padding: 60px 0;
+
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__top {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: $offset-main;
+        }
+
+        &__title-box {
+            grid-column: 12 span;
+        }
+
+        &__title {
+            display: block;
+            @include Body_Standart_2_Desktop-Semibold;
+            color: $color-primary1;
+            text-transform: uppercase;
+            margin-top: $offset-secondary;
+        }
+
+        &__content {
+            margin-top: 30px;
+            grid-column: 10 span;
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: column
+        }
+
+        &__nav-block {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__nav-link {
+            @include Body_Standart_1_Desktop_Regular;
+            display: block;
+            color: $color-primary1;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__contacts-block {
+            margin: 30px 0;
+        }
+
+        &__contacts-line {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+
+            .contact {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &__address {
+            max-width: 600px;
+        }
+
+        &__other-places {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__other-places-block {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__other-places-title {
+            display: block;
+            opacity: .6;
+            margin-bottom: 16px;
+        }
+
+        &__icon-link {
+            &:not(:last-child) {
+                margin-right: $offset-secondary;
+            }
+        }
+
+        &__bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.30);
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        &__bottom-inner {
+            display: flex;
+            flex-direction: column;
+            grid-column: 12 span;
+        }
+
+        &__bottom-link {
+            display: block;
+            color: $color-primary1;
+            text-decoration-line: underline;
+            margin-top: 15px;
+        }
+    }
+
+
+
+}

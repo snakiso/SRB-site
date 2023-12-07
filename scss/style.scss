@@ -1,0 +1,72 @@
+@import '../scss/breakpoints';
+@import '../scss/vars';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Wix Madefor Display', sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+main{
+  overflow: hidden;
+}
+
+@import '../scss/layout';
+@import '../scss/titles';
+@import '../scss/texts';
+@import '../scss/sliders';
+@import '../scss/wrapper';
+@import '../scss/animation';
+@import '../scss/delay';
+@import '../html/common/header/header';
+@import '../html/common/footer/footer';
+@import '../html/blocks/nav/nav';
+@import '../html/blocks/hamburger/humburger';
+@import '../html/blocks/contact/contact';
+@import '../html/blocks/hero/hero';
+@import '../html/blocks/button/button';
+@import '../html/common/menu/menu';
+@import '../html/blocks/about/about';
+@import '../html/blocks/banner/banner';
+@import '../html/blocks/control/control';
+@import '../html/blocks/catalog-slider/catalog-slider';
+@import '../html/blocks/card/card';
+@import '../html/blocks/news/news';
+@import '../html/blocks/contact-us/contact-us';
+@import '../html/blocks/form/form';
+@import '../html/blocks/catalog/catalog';
+@import '../html/blocks/tabs/tabs';
+@import '../html/blocks/documents/documents';
+@import '../html/blocks/catalog-item/catalog-item';
+@import '../html/blocks/other-products/other-products';
+@import '../html/blocks/question/question';
+@import '../html/blocks/contacts/contacts';
+@import '../html/blocks/advantages/advantages';
+@import '../html/blocks/breadcrumb/breadcrumb';
+@import '../html/blocks/404/404';
+@import '../html/blocks/back-link/back-link';
+@import '../scss/back-video.scss';
+@import '../html/common/parallel-lines/parallel-lines';

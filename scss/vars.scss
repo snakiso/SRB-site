@@ -1,0 +1,176 @@
+//Цвета
+$color-accent: #40AE97;
+$color-accent-hover: #5BC3AD;
+$color-accent2: #252638;
+$color-secondary: #4A4A49;
+$color-secondary1: #E6E6E6;
+$color-secondary2: #C7C7C7;
+$color-primary: #000;
+$color-primary1: white;
+
+
+
+
+//Основной текст текста
+
+@mixin Body_Accent1_Desktop {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+@mixin Body_Accent1_Mobile {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@mixin Body_Accent2_Desktop {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@mixin Body_Accent2_Mobile {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@mixin Body_Standart_0_Desktop-Regular {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_0_Mobile-Regular {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_1_Desktop-Regular {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_1_Mobile-Regular {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_1_Desktop-Semibold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin Body_Standart_1_Mobile-Semibold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin Body_Standart_2_Desktop-Regular {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_2_Mobile-Regular {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_2_Desktop-Semibold {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin Body_Standart_2_Mobile-Semibold {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin Body_Standart_3_Desktop-Regular {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@mixin Body_Standart_3_Mobile-Regular {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+//Cвойства заголовков 
+
+@mixin H1_D {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+}
+
+@mixin H1_M {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.96px
+}
+
+@mixin H2_D {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+@mixin H2_M {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+}
+
+@mixin H3_D {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.02px;
+}
+
+@mixin H3_M {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+}
+
+@mixin H4_D {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+@mixin H4_M {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+@mixin H5_D {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+}
+
+@mixin H5_M {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+}
+
+//Отступы
+$offset-bigest: 110px;
+$offset-big: 60px;
+$offset-middle: 40px;
+$offset-main: 30px;
+$offset-secondary: 20px;
+
+
+
+//Сетка
+
+$grid-gutter: 30px;
+$grid-col: 78px;
+$grid-item: calc($grid-col + $grid-gutter);
+
+
+//Контейнер
+
+$container: calc(($grid-gutter * 13) + ($grid-col * 12))

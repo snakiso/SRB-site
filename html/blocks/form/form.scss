@@ -1,0 +1,146 @@
+.form {
+    position: relative;
+    &__input-block {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: $offset-secondary;
+        }
+    }
+
+    &__input {
+        height: 60px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $color-primary1;
+        background: none;
+        color: $color-primary1;
+        padding: 30px 0 10px 0px;
+        font-family: 'Wix Madefor Display', sans-serif;
+
+        &::placeholder {
+            font-family: 'Wix Madefor Display', sans-serif;
+            color: $color-primary1;
+        }
+    }
+
+    &__accept-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__accept-text {
+        color: $color-primary1;
+        margin-left: 10px;
+    }
+
+    &__input-label {
+        position: absolute;
+        left: 0px;
+        top: 25px;
+        z-index: 2;
+        pointer-events: none;
+        font-family: 'Wix Madefor Display', sans-serif;
+        color: $color-primary1;
+        opacity: .7;
+        transform-origin: left;
+        transition: 1s cubic-bezier(.225, 1, .316, .99);
+        transform: translateY(-28px) scale(.8);
+    }
+
+    &__input:invalid+&__input-label {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    &__input:focus+&__input-label {
+        opacity: .7;
+        transform: translateY(-28px) scale(.8);
+    }
+
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        accent-color: $color-accent;
+        appearance: none;
+        border: 1px solid white;
+
+        &:checked{
+            border: none;
+            background-image: url(../img/icons/checkbox.svg);
+            background-size: cover;
+        }
+    }
+
+    .email-label.js-active {
+        opacity: .7 !important;
+        transform: translateY(-28px) scale(.8) !important;
+    }
+
+
+    @include desktop {
+        &__accept-box {
+            margin: 40px 0;
+        }
+
+        &__checkbox {
+            width: 20px;
+            height: 20px;
+            accent-color: $color-accent;
+        }
+
+        &__recaptcha {
+            max-width: 300px;
+            height: 70px;
+            border: 1px solid white;
+            width: 100%;
+        }
+
+        &__submit-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    @include tablet {
+        &__accept-box {
+            margin: 40px 0;
+        }
+
+
+        &__recaptcha {
+            max-width: 300px;
+            height: 70px;
+            border: 1px solid white;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &__submit-block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include mobile {
+        &__accept-box {
+            margin: 30px 0;
+        }
+
+
+        &__recaptcha {
+            max-width: 300px;
+            height: 70px;
+            border: 1px solid white;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &__submit-block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

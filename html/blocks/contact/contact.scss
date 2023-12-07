@@ -1,0 +1,102 @@
+.contact {
+    position: relative;
+    @include Body_Standart_1_Desktop_Regular;
+    padding-left: 35px;
+    display: block;
+    color: $color-primary1;
+    height: fit-content;
+
+    &_black {
+        color: $color-primary;
+    }
+
+    &_tel::before {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        background-image: url(../img/icons/tel.svg);
+        left: 0;
+        background-size: contain;
+    }
+
+    &_mail::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 15px;
+        background-image: url(../img/icons/mail.svg);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: cover;
+    }
+
+    &_loc::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 19px;
+        background-image: url(../img/icons/loc.svg);
+        left: 0;
+        background-size: cover;
+    }
+
+    &_telegram::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 15px;
+        background-image: url(../img/icons/telegram-sm.svg);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
+    }
+
+    &_whatsapp::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 18px;
+        background-image: url(../img/icons/whatsapp-sm.svg);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
+    }
+
+    &_tel-black::before {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        background-image: url(../img/icons/tel-black.svg);
+        left: 0;
+        background-size: contain;
+    }
+
+    &_mail-black::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 15px;
+        background-image: url(../img/icons/mail-black.svg);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: cover;
+    }
+
+    &_loc-black::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 19px;
+        background-image: url(../img/icons/loc-black.svg);
+        left: 0;
+        background-size: cover;
+    }
+}
