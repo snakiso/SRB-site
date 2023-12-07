@@ -1,4 +1,6 @@
 .button {
+    position: relative;
+    z-index: 20;
     font-family: 'Wix Madefor Display', sans-serif;
     display: flex;
     border: none;

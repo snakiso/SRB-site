@@ -1,5 +1,20 @@
 .about {
 
+    &__box-animate {
+        position: relative;
+        overflow: hidden;
+
+        .idle {
+            opacity: .2;
+        }
+
+        .hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
     @include desktop {
         padding: $offset-bigest 0;
 
@@ -44,6 +59,10 @@
         &__box {
             display: flex;
             flex-direction: column;
+
+            &:nth-child(2) {
+                margin-left: -20px;
+            }
         }
 
         &__box-main {
@@ -52,9 +71,13 @@
         }
 
         &__box-number {
+            display: inline-block;
             font-size: 130px;
             color: $color-accent;
-            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 10px;
+            }
         }
 
         &__box-text {
@@ -122,6 +145,7 @@
         }
 
         &__box-number {
+            display: inline-block;
             font-size: 120px;
             color: $color-accent;
             margin-right: 10px;
@@ -195,6 +219,7 @@
         }
 
         &__box-number {
+            display: inline-block;
             font-size: 110px;
             color: $color-accent;
             margin-right: 10px;

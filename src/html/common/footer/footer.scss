@@ -1,7 +1,8 @@
 .footer {
     background-color: $color-accent2;
     color: $color-primary1;
-
+    position: relative;
+    z-index: 12;
     @include desktop {
         padding: 75px 0;
 

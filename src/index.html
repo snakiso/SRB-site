@@ -5,11 +5,12 @@
 })
 
 <body class="body">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
     <div class="page">
         @@include('html/common/header/header.html',{})
         @@include('html/common/menu/menu.html',{})
         <main class="main">
+            @@include('html/common/parallel-lines/parallel-lines.html',{})
             @@include('html/blocks/hero/hero.html',{})
             @@include('html/blocks/about/about-numbers.html',{})
             @@include('html/blocks/banner/banner.html',{})
@@ -23,6 +24,7 @@
         @@include('html/common/footer/footer.html',{})
     </div>
 </body>
+<script src="./js/animations.js"></script>
 <script src="./js/video.js"></script>
 <script src="./js/hero-slider.js"></script>
 <script src="./js/burger.js"></script>

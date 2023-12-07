@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jQuery2.2.0.js?_v=20231024133002"></script>
-    <script src="js/ScrollAnimations.js?_v=20231024133002"></script>
+    <script src="js/jQuery2.2.0.js?_v=20231207145129"></script>
+    <script src="js/ScrollAnimations.js?_v=20231207145129"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231024133002"
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231207145129"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231024133002">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231207145129">
     <title>Index</title>
 </head>
 
 <body class="body">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231024133002"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231207145129"></script>
     <div class="page">
         <header class="header">
     <div class="header__wrapper wrapper">
@@ -228,68 +228,105 @@
         </div>
     </div>
 </section>
-            <section class="about">
+            <section class="about" data-animation-container>
     <div class="wrapper grid">
         <div class="about__inner about__inner_flex">
             <div class="about__box">
                 <div class="about__box-main">
-                    <span class="about__box-number">9</span>
-                    <span class="about__box-text">лет</span>
+                    <div class="about__box-animate">
+                        <div class="idle">
+                            <span class="about__box-number animate-count-opacity" data-animation-child>9</span>
+                        </div>
+                        <div class="hover">
+                            <span class="about__box-number animate-count" data-animation-child>9</span>
+                        </div>
+                    </div>
+                    <span class="about__box-text fade-up" data-animation-child data-delay=".2">лет</span>
                 </div>
-                <p class="about__box-description">на рынке пластиковой <br> упаковки</p>
+                <p class="about__box-description fade-up" data-animation-child data-delay=".5">на рынке пластиковой <br>
+                    упаковки</p>
             </div>
             <div class="about__box">
                 <div class="about__box-main">
-                    <span class="about__box-number">160</span>
-                    <span class="about__box-text">млн <br> изделий</span>
+                    <div class="about__box-animate">
+                        <div class="idle">
+                            <span class="about__box-number animate-count-opacity" data-animation-child>1</span>
+                            <span class="about__box-number animate-count-opacity" data-animation-child
+                                data-delay=".1">6</span>
+                            <span class="about__box-number animate-count-opacity" data-animation-child
+                                data-delay=".2">0</span>
+                        </div>
+                        <div class="hover">
+                            <span class="about__box-number animate-count" data-animation-child>1</span>
+                            <span class="about__box-number animate-count" data-animation-child data-delay=".1">6</span>
+                            <span class="about__box-number animate-count" data-animation-child data-delay=".2">0</span>
+                        </div>
+                    </div>
+                    <span class="about__box-text fade-up" data-animation-child data-delay=".2">млн <br> изделий</span>
                 </div>
-                <p class="about__box-description">объем выпускаемой
-                <br>  продукции</p>
+                <p class="about__box-description fade-up" data-animation-child data-delay=".5">объем выпускаемой
+                    <br> продукции
+                </p>
             </div>
             <div class="about__box">
                 <div class="about__box-main">
-                    <span class="about__box-number">5</span>
-                    <span class="about__box-text">тыс м²</span>
+                    <div class="about__box-animate">
+                        <div class="idle">
+                            <span class="about__box-number animate-count-opacity" data-animation-child>5</span>
+                        </div>
+                        <div class="hover">
+                            <span class="about__box-number animate-count" data-animation-child>5</span>
+                        </div>
+                    </div>
+                    <span class="about__box-text fade-up" data-animation-child data-delay=".2">тыс м²</span>
                 </div>
-                <p class="about__box-description">производственно- <br>складской площади</p>
+                <p class="about__box-description fade-up" data-animation-child data-delay=".5">производственно-
+                    <br>складской площади</p>
             </div>
         </div>
     </div>
 </section>
-            <section class="banner">
+            <section class="banner" data-animation-container>
     <div class="wrapper grid">
         <div class="banner__inner">
-            <p class="banner__text">Работаем в соответствии
-                <span class="banner__text banner__text_accent">
-                    с&nbsp;международными
-                    стандартами
-                </span>
-                и&nbsp;выпускаем продукцию высокого качества
-            </p>
-            <div class="banner__line-box">
-                <span class="banner__line"></span>
+            <div class="banner__text">
+                <p class="fade-up" data-animation-child>Работаем в соответствии
+                    <span class="banner__text banner__text_accent">
+                        с международными
+                        стандартами
+                    </span>
+                </p>
+                <p  class="fade-up" data-animation-child data-delay=".1">
+                    и выпускаем продукцию высокого качества
+                </p>
             </div>
-            <p class="banner__text ">ISO 9001-2015</p>
+            <div class="banner__line-box">
+                <span class="banner__line" data-animation-child ></span>
+            </div>
+            <p class="banner__text fade-up" data-animation-child data-delay=".2">ISO 9001-2015</p>
         </div>
     </div>
 </section>
-            <section class="about">
+            <section class="about" data-animation-container>
     <div class="wrapper grid">
         <div class="about__inner about__inner_grid">
             <h2 class="about__title md-title">О компании</h2>
             <div class="about__content">
-                <h3 class="about__subtitle">СРП Групп основана в 2014 году</h3>
-                <p class="about__text p-own">Цель компании — создание отечественного производства качественной
+                <h3 class="about__subtitle fade-up" data-animation-child>СРП Групп основана в 2014 году</h3>
+                <p class="about__text p-own fade-up" data-animation-child data-delay=".1">Цель компании — создание
+                    отечественного производства качественной
                     полимерной
                     фармацевтической упаковки.
                 </p>
-                <p class="about__text p-own">Актуальность: огромный потенциал российской полимерной фармацевтической
+                <p class="about__text p-own fade-up" data-animation-child data-delay=".2">Актуальность: огромный
+                    потенциал российской полимерной фармацевтической
                     упаковки и
                     повышенный спрос со стороны
                     отечественных производителей лекарственной продукции, который не удовлетворяется существующими на
                     рынке компаниями в
                     данном сегменте.</p>
-                <p class="about__text p-own">Развитие собственного производства позволит создавать конкурентноспособные
+                <p class="about__text p-own fade-up" data-animation-child data-delay=".3">Развитие собственного
+                    производства позволит создавать конкурентноспособные
                     качественные
                     изделия, которые способны
                     заместить импортные аналоги и обеспечить лекарственную безопасность страны.</p>
@@ -299,22 +336,28 @@
         </div>
     </div>
 </section>
-            <section class="control">
-    <div class="control__wrapper wrapper grid">
+            <section class="control" data-animation-container>
+    <div class=" wrapper control__wrapper grid">
+        <div class="control__img-block">
+            <img class="control__bg" src="img/other/control-bg.png" alt="">
+        </div>
         <div class="control__inner">
             <h2 class="control__title md-title">Контроль
                 и&nbsp;качество</h2>
             <div class="control__content">
                 <div class="control__line-box">
-                    <span class="control__line"></span>
+                    <span class="control__line" data-animation-child></span>
                 </div>
-                <p class="control__text p-lg">Наша упаковка прошла испытания <br>
+                <p class="control__text p-lg fade-up" data-animation-child data-delay=".4">Наша упаковка прошла испытания <br>
                     на стабильность с лекарственными средствами, внесена
-                    в&nbsp;каталоги ведущих фармацевтических предприятий России и имеет сертификаты соответствия требованиям
+                    в&nbsp;каталоги ведущих фармацевтических предприятий России и имеет сертификаты соответствия
+                    требованиям
                     нормативных
                     документов.</p>
-                <a href="#" class="control__button button button_accent"><span class="button__text">Подробнее</span>
-                    <img class="button__arrow" src="img/icons/btn-arrow.svg" alt=""></a>
+                <a href="#" class="control__button button button_accent">
+                    <span class="button__text">Подробнее</span>
+                    <img class="button__arrow" src="img/icons/btn-arrow.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -324,10 +367,10 @@
         <div class="advantages__inner">
             <h2 class="advantages__title md-title">Наши преимущества</h2>
             <div class="advantages__list">
-                <div class="advantages__item">
-                    <span class="advantages__item-title">Собственное производство</span>
+                <div class="advantages__item" data-animation-container>
+                    <span class="advantages__item-title fade-up" data-animation-child>Собственное производство</span>
                     <div class="advantages__slider-box">
-                        <div class="advantages__slider advantages__slider-1">
+                        <div class="advantages__slider advantages__slider-1" data-animation-child>
                             <div class="swiper-wrapper">
                                 <div class="advantages__slide swiper-slide">
                                     <img src="img/advantages/1.jpg" alt="" class="advantages__slide-bg">
@@ -368,10 +411,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages__item advantages__item_reverse">
-                    <span class="advantages__item-title">Технологии контроля качества</span>
+                <div class="advantages__item advantages__item_reverse" data-animation-container>
+                    <span class="advantages__item-title fade-up" data-animation-child>Технологии контроля
+                        качества</span>
                     <div class="advantages__slider-box">
-                        <div class="advantages__slider advantages__slider-2">
+                        <div class="advantages__slider advantages__slider-2" data-animation-child>
                             <div class="swiper-wrapper">
                                 <div class="advantages__slide swiper-slide">
                                     <img src="img/advantages/1.jpg" alt="" class="advantages__slide-bg">
@@ -412,10 +456,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages__item">
-                    <span class="advantages__item-title">Сотрудничество</span>
+                <div class="advantages__item" data-animation-container>
+                    <span class="advantages__item-title fade-up" data-animation-child>Сотрудничество</span>
                     <div class="advantages__slider-box">
-                        <div class="advantages__slider advantages__slider-3">
+                        <div class="advantages__slider advantages__slider-3" data-animation-child>
                             <div class="swiper-wrapper">
                                 <div class="advantages__slide swiper-slide">
                                     <img src="img/advantages/1.jpg" alt="" class="advantages__slide-bg">
@@ -456,10 +500,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages__item advantages__item_reverse">
-                    <span class="advantages__item-title">Профессионализм</span>
+                <div class="advantages__item advantages__item_reverse" data-animation-container>
+                    <span class="advantages__item-title fade-up" data-animation-child>Профессионализм</span>
                     <div class="advantages__slider-box">
-                        <div class="advantages__slider advantages__slider-4">
+                        <div class="advantages__slider advantages__slider-4" data-animation-child>
                             <div class="swiper-wrapper">
                                 <div class="advantages__slide swiper-slide">
                                     <img src="img/advantages/1.jpg" alt="" class="advantages__slide-bg">
@@ -560,13 +604,13 @@
         </div>
     </div>
 </section>
-            <section class="news">
+            <section class="news" data-animation-container>
     <div class="wrapper grid">
         <div class="news__inner">
             <h2 class="md-title">Новости</h2>
             <div class="news__slider multiply-show-slider">
                 <div class="news__container swiper-wrapper">
-                    <a href="#" class="news__card card card_news swiper-slide">
+                    <a href="#" class="news__card card card_news swiper-slide fade-up" data-animation-child>
                         <img class="news__img card__img" src="img/news/1.jpg" alt="">
                         <span class="news__card-date">25/08/23</span>
                         <p class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -577,7 +621,7 @@
                             tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veni</p>
                     </a>
-                    <a href="#" class="news__card card card_news swiper-slide">
+                    <a href="#" class="news__card card card_news swiper-slide fade-up" data-animation-child data-delay=".1">
                         <img class="news__img card__img" src="img/news/1.jpg" alt="">
                         <span class="news__card-date">25/08/23</span>
                         <p class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -588,7 +632,7 @@
                             tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veni</p>
                     </a>
-                    <a href="#" class="news__card card card_news swiper-slide">
+                    <a href="#" class="news__card card card_news swiper-slide fade-up" data-animation-child data-delay=".2">
                         <img class="news__img card__img" src="img/news/1.jpg" alt="">
                         <span class="news__card-date">25/08/23</span>
                         <p class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -601,7 +645,7 @@
                     </a>
                 </div>
                 <div class="news__slider-button-box">
-                    <a href="#" class="button button_accent">
+                    <a href="#" class="news__button button button_accent">
                         <span class="button__text">Все новости</span>
                         <img class="button__arrow" src="img/icons/btn-arrow.svg" alt="">
                     </a>
@@ -611,9 +655,12 @@
         </div>
     </div>
 </section>
-            <section class="contact-us">
-    <div class="wrapper grid">
+            <section class="contact-us fade-up" data-animation-container data-animation-start>
+    <div class="wrapper grid" data-animation-child>
         <div class="contact-us__inner">
+            <div class="contact-us__img-block">
+                <img src="img/other/contact-us-bg.png" alt="">
+            </div>
             <h2 class="contact-us__title md-title">Cвяжитесь с нами
                 и&nbsp;мы ответим на все ваши вопросы</h2>
             <form class="contact-us__form form" action="" method="post">
@@ -757,8 +804,8 @@
 </footer>
     </div>
 </body>
-<script src="./js/video.js?_v=20231024133002"></script>
-<script src="./js/burger.js?_v=20231024133002"></script>
-<script src="./js/swipers.js?_v=20231024133002"></script>
+<script src="./js/video.js?_v=20231207145129"></script>
+<script src="./js/burger.js?_v=20231207145129"></script>
+<script src="./js/swipers.js?_v=20231207145129"></script>
 
 </html>

@@ -30,6 +30,9 @@ body {
   overflow-x: hidden;
 }
 
+main{
+  overflow: hidden;
+}
 
 @import '../scss/layout';
 @import '../scss/titles';
@@ -37,6 +40,7 @@ body {
 @import '../scss/sliders';
 @import '../scss/wrapper';
 @import '../scss/animation';
+@import '../scss/delay';
 @import '../html/common/header/header';
 @import '../html/common/footer/footer';
 @import '../html/blocks/nav/nav';
@@ -65,3 +69,4 @@ body {
 @import '../html/blocks/404/404';
 @import '../html/blocks/back-link/back-link';
 @import '../scss/back-video.scss';
+@import '../html/common/parallel-lines/parallel-lines';

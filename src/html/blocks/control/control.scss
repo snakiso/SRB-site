@@ -1,6 +1,8 @@
 .control {
     background-color: $color-accent2;
     color: $color-primary1;
+    position: relative;
+    z-index: 12;
 
     &__line-box {
         position: relative;
@@ -12,19 +14,21 @@
         width: 1500px;
         height: 1px;
         background: $color-accent;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: ease-in .6s;
+    }
+
+    &__line.animated{
+        transform: scaleX(1);
     }
 
     @include desktop {
-        &__wrapper {
-            background-image: url(../img/other/control-bg.png);
-            background-repeat: no-repeat;
-            background-position-y: top;
-            background-position-x: left;
-        }
 
         &__inner {
+            max-width: 1050px;
+            margin: auto;
             padding: 150px 0;
-
             grid-column: 2/10 span;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -32,7 +36,7 @@
         }
 
         &__title {
-            grid-column: 3 span;
+            grid-column: 1/3 span;
         }
 
         &__content {
@@ -45,9 +49,23 @@
             margin-top: $offset-secondary;
             margin-bottom: $offset-middle;
         }
+
+        &__img-block{
+            position: relative;
+            grid-column: 1/5 span;
+        }
+
+        &__bg {
+            position: absolute;
+            right: -55px;
+        }
     }
 
     @include tablet {
+
+        &__bg{
+            display: none;
+        }
 
         &__inner {
             padding: 100px 0;
@@ -73,6 +91,10 @@
     }
 
     @include mobile {
+
+        &__bg {
+                display: none;
+            }
 
         &__inner {
             padding: 100px 0;

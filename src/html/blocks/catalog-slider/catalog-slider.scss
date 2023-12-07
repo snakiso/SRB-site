@@ -1,4 +1,7 @@
 .catalog-slider {
+    position: relative;
+    z-index: 12;
+
     @include desktop {
         &__inner {
             grid-column: 2/11 span;

@@ -1,106 +1,43 @@
-.btn-hover {
-  position: relative;
-  overflow: hidden;
-  transition: all .2s;
+.animate-count {
+  transform: translateY(100%);
+  transition: transform .8s cubic-bezier(.351, .311, 0, .995);
 }
 
-.btn-hover::before {
-  position: absolute;
-  content: '';
-  width: 9px;
-  height: 9px;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
-  transform: rotate(-45deg);
-  right: 30px;
+.animate-count.animated {
+  transform: translateY(0%);
+}
+
+.animate-count-opacity {
+  transform: translateY(100%);
+  transition: transform .8s cubic-bezier(.351, .311, 0, .995);
+}
+
+.animate-count-opacity.animated {
+  transform: translateY(-102%);
+}
+
+.fade-up{
+  transform: translateY(100%);
   opacity: 0;
-  transition: all .4s;
+  transition: all .8s cubic-bezier(.351, .311, 0, .995);
 }
 
-.btn-hover:hover {
-  width: 220px;
-}
-
-.btn-hover:hover:before {
-  right: 25px;
-  opacity: 1;
-}
-
-
-.card-up {
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.card-up-2 {
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all .2s;
-  transition-delay: .2s;
-}
-
-.card-up-4 {
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all .2s;
-  transition-delay: .4s;
-}
-
-.card-up.animated {
-  transform: none;
-  opacity: 1;
-}
-
-.card-up-2.animated {
-  transform: none;
-  opacity: 1;
-}
-
-.card-up-4.animated {
-  transform: none;
-  opacity: 1;
-}
-
-.fade-left {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.fade-right {
-  transform: translateX(100%);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.fade-down {
-  transform: translateY(200px);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.fade-left.animated {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.fade-right.animated {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.fade-down.animated {
+.fade-up.animated{
   transform: translateY(0%);
   opacity: 1;
 }
 
+.swiper-slide-active .fade-up {
+  transform: translateY(0%);
+  opacity: 1;
+}
 
-@media screen and (max-width: 1300px) {
+.fade-in-slider{
+  opacity: 0;
+  transition: all 2s cubic-bezier(.351, .311, 0, .995);
+}
 
-  .card-up,
-  .card-up-2,
-  .card-up-4 {
-    transition-delay: 0s;
-  }
+
+.swiper-slide-active .fade-in-slider{
+  opacity: 1;
 }

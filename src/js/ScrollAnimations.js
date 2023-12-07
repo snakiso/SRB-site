@@ -14,7 +14,7 @@
          * @type {{offset: number}}
          */
         defaults = {
-            offset: 0.8
+            offset: 0.5
         };
 
     var timer;

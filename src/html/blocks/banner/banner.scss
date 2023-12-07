@@ -2,7 +2,18 @@
     background-image: url(../img/other/banner.png);
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 12;
 
+    &__line{
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: ease-in .8s;
+    }
+
+    &__line.animated{
+        transform: scaleX(1);
+    }
 
     @include desktop {
         padding: 135px 0;

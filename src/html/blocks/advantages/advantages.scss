@@ -1,4 +1,26 @@
 .advantages {
+    position: relative;
+    z-index: 12;
+
+    &__slider-1,
+    &__slider-3 {
+        transform-origin: right;
+    }
+
+    &__slider-2,
+    &__slider-4 {
+        transform-origin: left;
+    }
+
+    &__slider {
+        transform: scaleX(0);
+        transition: ease-in .6s;
+
+    }
+
+    &__slider.animated {
+        transform: scaleX(1);
+    }
 
     @include desktop {
         padding: 110px 0;
@@ -323,7 +345,7 @@
             color: white;
             max-width: 520px;
             margin-top: 15px;
-            
+
         }
 
         &__slider-nav {
