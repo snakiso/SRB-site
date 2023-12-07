@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
-@@include('html/common/head/head.html',{
-"title": "Ошибка"
-})
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jQuery2.2.0.js?_v=20231207165425"></script>
+    <script src="js/ScrollAnimations.js?_v=20231207165425"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231207165425"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231207165425">
+    <title>Ошибка</title>
+</head>
 
 <body class="body">
     <div class="page">
         <main class="main">
-            @@include('html/blocks/404/404.html',{})
+            <section class="error">
+    <div class="error__container">
+        <span class="error__title">404</span>
+        <span class="error__subtitle">К сожалению, такой страницы не существует...</span>
+        <span class="error__secondary">Пожалуйста, вернитесь на главную</span>
+        <a href="#" class="button button_white">
+            <span class="button__text">Подробнее</span>
+            <img class="button__arrow" src="img/icons/btn-arr-black.svg" alt="">
+        </a>
+    </div>
+</section>
         </main>
     </div>
 </body>
