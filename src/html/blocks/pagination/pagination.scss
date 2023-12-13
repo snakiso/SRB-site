@@ -1,0 +1,94 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btn {
+        background: none;
+        border: none;
+        color: #000;
+        @include Body_Standart_2_Desktop_Regular;
+
+        &:disabled {
+            color: #CBCBCB;
+        }
+    }
+
+    &__nubmers-block {
+        display: flex;
+    }
+
+    &__number {
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #EAEAEA;
+        padding: 8px 12px;
+
+
+        &.active {
+            border: 1px solid #40AE97;
+        }
+    }
+
+    &__dots {
+        display: block;
+        padding: 8px 12px;
+    }
+
+    @include desktop {
+        &__number {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &__dots {
+            margin-right: 20px;
+        }
+
+        &__nubmers-block {
+            margin: 0 40px;
+
+        }
+    }
+
+    @include tablet {
+        &__number {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        &__dots {
+            margin-right: 15px;
+        }
+
+        &__nubmers-block {
+            margin: 0 30px;
+
+        }
+    }
+
+    @include mobile {
+        &__number {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        &__dots {
+            margin-right: 15px;
+        }
+
+        &__nubmers-block {
+            margin: 0 15px;
+
+        }
+    }
+}

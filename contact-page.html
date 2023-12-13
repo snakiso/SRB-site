@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jQuery2.2.0.js?_v=20231207165425"></script>
-    <script src="js/ScrollAnimations.js?_v=20231207165425"></script>
+    <script src="js/jQuery2.2.0.js?_v=20231213124541"></script>
+    <script src="js/ScrollAnimations.js?_v=20231213124541"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231207165425"
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231213124541"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231207165425">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231213124541">
     <title>Контакты</title>
 </head>
 
@@ -192,18 +192,18 @@
     <div class="contacts__wrapper wrapper grid">
         <div class="contacts__inner">
             <h2 class="md-title">Контакты</h2>
-            <div class="contacts__content">
+            <div class="contacts__content" data-animation-container> 
                 <div class="contacts__container">
-                    <div class="contacts__box">
+                    <div class="contacts__box fade-up" data-animation-child>
                         <span class="contacts__box-title p-own">Телефон</span>
                         <a href="#" class="contact contact_black contact_tel-black">+7 (495) 231-34-25</a>
                         <a href="#" class="contact contact_black contact_tel-black">+7 (903) 129-58-53</a>
                     </div>
-                    <div class="contacts__box">
+                    <div class="contacts__box fade-up" data-animation-child data-delay=".3">
                         <span class="contacts__box-title p-own">По вопросам сотрудничества</span>
                         <a href="#" class="contact contact_black contact_mail-black">flakon-farma@srp-gr.ru</a>
                     </div>
-                    <div class="contacts__box">
+                    <div class="contacts__box fade-up" data-animation-child data-delay=".5">
                         <span class="contacts__box-title p-own">Адрес</span>
                         <a href="#" class="contact contact_black contact_loc-black">142715, Московская обл., Ленинский
                             г.о., г. Видное, п.
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <section class="contacts__question question">
-                    <div class="question__inner">
+                    <div class="question__inner" data-animation-child>
                         <span class="sm-title">У Вас остались вопросы?</span>
                         <p class="question__p p-own">Свяжитесь с нами, и мы с удовольствием на них ответим</p>
                         <a href="#" class="button button_white">
@@ -226,7 +226,7 @@
         </div>
     </div>
     <div class="contacts__map">
-        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20231207165425"
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20231213124541"
             type="text/javascript"></script>
         <script>
             var myMap;
@@ -361,6 +361,7 @@
 </footer>
     </div>
 </body>
-<script src="./js/burger.js?_v=20231207165425"></script>
+<script src="./js/animations.js?_v=20231213124541"></script>
+<script src="./js/burger.js?_v=20231213124541"></script>
 
 </html>

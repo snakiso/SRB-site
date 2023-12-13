@@ -5,16 +5,22 @@
         margin-bottom: 90px;
         color: white;
 
+
         &__inner {
             padding: 40px 0 40px 30px;
             width: 1500px;
             height: 100%;
             position: absolute;
-            left: 0;
+            left: 2000px;
             background-color: $color-accent;
             background-image: url(../img/other/control-bg.png);
             background-repeat: no-repeat;
             background-position: center;
+            transition: all .5s;
+
+            &.animated {
+                left: 0px;
+            }
         }
 
         &__p {
@@ -27,13 +33,13 @@
         height: 250px;
         margin-bottom: 90px;
         color: white;
+        left: 0;
 
         &__inner {
             padding: 40px 15px 40px 15px;
             width: 1500px;
             height: 100%;
             position: absolute;
-            left: -15px;
             background-color: $color-accent;
         }
 

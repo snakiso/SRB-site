@@ -8,7 +8,7 @@ const hero = document.querySelector('.hero')
 const changeStyle = () => {
     hero.classList.add('ready')
     video.style.width = '100%';
-    video.style.height = '100%';
+    video.style.height = '90%';
     video.style.position = 'absolute';
     video.style.zIndex = '5'
     darkWall.style.zIndex = '1'

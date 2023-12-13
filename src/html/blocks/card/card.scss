@@ -1,10 +1,13 @@
 .card {
 
     @include desktop {
+        display: block;
         max-width: 300px;
         width: 100%;
 
         &_news {
+            display: flex;
+            flex-direction: column;
             max-width: 325px;
             width: 100%;
         }
@@ -15,6 +18,7 @@
         }
 
         &__title {
+            flex-grow: 1;
             @include H5_D;
         }
     }

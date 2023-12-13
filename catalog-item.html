@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jQuery2.2.0.js?_v=20231207165425"></script>
-    <script src="js/ScrollAnimations.js?_v=20231207165425"></script>
+    <script src="js/jQuery2.2.0.js?_v=20231213124541"></script>
+    <script src="js/ScrollAnimations.js?_v=20231213124541"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231207165425"
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231213124541"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231207165425">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231213124541">
     <title>Флакон</title>
 </head>
 
 <body class="body">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231207165425"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231213124541"></script>
     <div class="page">
         <header class="header">
     <div class="header__wrapper wrapper">
@@ -207,9 +207,9 @@
                 Флакон медицинский для лекарственных средств полимерный из полиэтилена объемом 5 мл с винтовой
                 горловиной
             </h3>
-            <div class="catalog-item__own">
-                <div class="catalog-item__preview-box">
-                    <div class="catalog-item__preview-slider">
+            <div class="catalog-item__own" data-animation-container>
+                <div class="catalog-item__preview-box fade-up" data-animation-child>
+                    <div class="catalog-item__preview-slider ">
                         <div class="catalog-item__preview-slider-wrapper swiper-wrapper">
                             <div class="catalog-item__preview-slider-slide swiper-slide">
                                 <img src="img/catalog/1.jpg" alt="">
@@ -236,7 +236,7 @@
                     </a>
                 </div>
                 <div class="catalog-item__params">
-                    <div class="catalog-item__params-block">
+                    <div class="catalog-item__params-block fade-up" data-animation-child data-delay=".1">
                         <div class="catalog-item__params-box">
                             <span class="catalog-item__param">Артикул</span>
                             <span class="p-own">ФВГ-5</span>
@@ -254,7 +254,7 @@
                             <span class="p-own">3,00 ± 0,50</span>
                         </div>
                     </div>
-                    <div class="catalog-item__params-block">
+                    <div class="catalog-item__params-block fade-up" data-animation-child data-delay=".2">
                         <span class="catalog-item__params-block-title">Основные размеры:</span>
                         <div class="catalog-item__params-box">
                             <span class="catalog-item__param">Диаметр, мм</span>
@@ -266,7 +266,7 @@
                             <span class="p-own">42,4±0,5</span>
                         </div>
                     </div>
-                    <div class="catalog-item__params-block">
+                    <div class="catalog-item__params-block fade-up" data-animation-child data-delay=".3">
                         <span class="catalog-item__params-block-title">Объем:</span>
                         <div class="catalog-item__params-box">
                             <span class="catalog-item__param">Вместимость, см³</span>
@@ -277,7 +277,7 @@
                             <span class="p-own">7,5</span>
                         </div>
                     </div>
-                    <div class="catalog-item__params-block">
+                    <div class="catalog-item__params-block fade-up" data-animation-child data-delay=".4">
                         <div class="catalog-item__params-box">
                             <span class="catalog-item__param">Тип упаковки</span>
                             <span class="p-own">Короб</span>
@@ -288,7 +288,7 @@
                             <span class="p-own">1000</span>
                         </div>
                     </div>
-                    <div class="catalog-item__params-block">
+                    <div class="catalog-item__params-block fade-up" data-animation-child data-delay=".5">
                         <div class="catalog-item__params-box">
                             <span class="catalog-item__param">Минимальная партия заказа, шт.</span>
                             <span class="p-own">от 1000, информацию уточняйте
@@ -297,31 +297,32 @@
                     </div>
                 </div>
             </div>
-            <div class="catalog-item__description">
-                <span class="catalog-item__description-title sm-title">Описание</span>
-                <p class="p-own">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero neque,
+            <div class="catalog-item__description" data-animation-container>
+                <span class="catalog-item__description-title sm-title fade-up" data-animation-child>Описание</span>
+                <p class="p-own fade-up" data-animation-child data-delay=".1">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Vestibulum libero neque,
                     accumsan vel dui sed, hendrerit
                     vestibulum nisl.
                     <br> Nullam in nibh porta, interdum dolor at, mollis ipsum. Curabitur hendrerit neque velit, eu
                     tempor
                 </p>
             </div>
-            <section class="other-products">
+            <section class="other-products" data-animation-container>
     <h3 class="sm-title">Комплектующие</h3>
     <div class="other-products__block">
-        <a href="#" class="other-products__item">
+        <a href="#" class="other-products__item fade-up" data-animation-child>
             <img src="img/other/1.jpg" alt="" class="other-products__item-img">
             <span class="other-products__item-title">Насадка-дозатор</span>
         </a>
-        <a href="#" class="other-products__item">
+        <a href="#" class="other-products__item fade-up" data-animation-child data-delay=".1">
             <img src="img/other/2.jpg" alt="" class="other-products__item-img">
             <span class="other-products__item-title">Крышка, навинчиваемая
                 с контролем первого вскрытия</span>
         </a>
     </div>
 </section>
-            <section class="question">
-    <div class="question__inner">
+            <section class="question" data-animation-container>
+    <div class="question__inner" data-animation-child>
         <span class="sm-title">У Вас остались вопросы?</span>
         <p class="question__p p-own">Свяжитесь с нами, и мы с удовольствием на них ответим</p>
         <a href="#" class="button button_white">
@@ -440,7 +441,8 @@
 </footer>
     </div>
 </body>
-<script src="./js/burger.js?_v=20231207165425"></script>
-<script src="./js/swipers.js?_v=20231207165425"></script>
+<script src="./js/animations.js?_v=20231213124541"></script>
+<script src="./js/burger.js?_v=20231213124541"></script>
+<script src="./js/swipers.js?_v=20231213124541"></script>
 
 </html>

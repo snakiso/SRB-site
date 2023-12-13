@@ -2,7 +2,7 @@
     <div class="wrapper grid">
         <div class="catalog__inner">
             <h2 class="lg-title">Каталог</h2>
-            <div class="tabs">
+            <div class="tabs" data-animation-container>
                 <div class="tabs__links-block">
                     <button class="tabs__link" onclick="openTab(event, 'first')" id="defaultOpen">Первичная
                         фармацевтическая полимерная упаковка</button>
@@ -13,7 +13,7 @@
                     <div class="tabs__content" id="first">
                         <h3 class="tabs__content-title">Первичная фармацевтическая полимерная упаковка</h3>
                         <div class="tabs__content-inner">
-                            <div class="card tabs__card">
+                            <div class="card tabs__card fade-up" data-animation-child data-delay=".2">
                                 <img src="@img/catalog/1.jpg" alt="" class="card__img catalog__img">
                                 <p class="card__title">Флакон медицинский для лекарственных средств полимерный из
                                     полиэтилена объемом 5 мл с винтовой горловиной</p>

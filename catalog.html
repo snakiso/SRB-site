@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jQuery2.2.0.js?_v=20231207165425"></script>
-    <script src="js/ScrollAnimations.js?_v=20231207165425"></script>
+    <script src="js/jQuery2.2.0.js?_v=20231213124541"></script>
+    <script src="js/ScrollAnimations.js?_v=20231213124541"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231207165425"
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231213124541"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231207165425">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231213124541">
     <title>Каталог</title>
 </head>
 
@@ -202,7 +202,7 @@
     <div class="wrapper grid">
         <div class="catalog__inner">
             <h2 class="lg-title">Каталог</h2>
-            <div class="tabs">
+            <div class="tabs" data-animation-container>
                 <div class="tabs__links-block">
                     <button class="tabs__link" onclick="openTab(event, 'first')" id="defaultOpen">Первичная
                         фармацевтическая полимерная упаковка</button>
@@ -213,7 +213,7 @@
                     <div class="tabs__content" id="first">
                         <h3 class="tabs__content-title">Первичная фармацевтическая полимерная упаковка</h3>
                         <div class="tabs__content-inner">
-                            <div class="card tabs__card">
+                            <div class="card tabs__card fade-up" data-animation-child data-delay=".2">
                                 <img src="img/catalog/1.jpg" alt="" class="card__img catalog__img">
                                 <p class="card__title">Флакон медицинский для лекарственных средств полимерный из
                                     полиэтилена объемом 5 мл с винтовой горловиной</p>
@@ -398,7 +398,8 @@
 </footer>
     </div>
 </body>
-<script src="./js/burger.js?_v=20231207165425"></script>
-<script src="./js/tabs.js?_v=20231207165425"></script>
+<script src="./js/animations.js?_v=20231213124541"></script>
+<script src="./js/burger.js?_v=20231213124541"></script>
+<script src="./js/tabs.js?_v=20231213124541"></script>
 
 </html>

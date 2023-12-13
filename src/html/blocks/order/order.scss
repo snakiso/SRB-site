@@ -1,0 +1,142 @@
+.order {
+    padding-bottom: 110px;
+
+
+    &__contact {
+        color: black;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+
+    @include desktop {
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__content {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 30px;
+        }
+
+        &__text-block {
+            grid-column: 7 span;
+            display: grid;
+            row-gap: 60px;
+        }
+
+        &__text {
+            @include Body_Standart_1_Desktop-Regular;
+        }
+
+        &__subtitle {
+            @include H4_D;
+            margin-bottom: 15px;
+        }
+
+        &__contact-block {
+            margin-top: 15px;
+        }
+
+        &__contact-block-title {
+            @include Body_Standart_1_Desktop_Regular;
+            color: #696969;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        &__img-block {
+            grid-column: 8/8 span;
+        }
+    }
+
+    @include tablet {
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__content {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 30px;
+        }
+
+        &__text-block {
+            grid-column: 9 span;
+            display: grid;
+            row-gap: 60px;
+        }
+
+        &__text {
+            @include Body_Standart_1_Desktop-Regular;
+        }
+
+        &__subtitle {
+            @include H4_D;
+            margin-bottom: 15px;
+        }
+
+        &__contact-block {
+            margin-top: 15px;
+        }
+
+        &__contact-block-title {
+            @include Body_Standart_1_Desktop_Regular;
+            color: #696969;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        &__img-block {
+            grid-column: 10/10 span;
+        }
+    }
+
+    @include mobile {
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__content {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 30px;
+        }
+
+        &__text-block {
+            grid-column: 12 span;
+            display: grid;
+            row-gap: 30px;
+        }
+
+        &__text {
+            @include Body_Standart_1_Mobile-Regular;
+        }
+
+        &__subtitle {
+            @include H4_D;
+            margin-bottom: 15px;
+        }
+
+        &__contact-block {
+            margin-top: 15px;
+        }
+
+        &__contact-block-title {
+            @include Body_Standart_1_Desktop_Regular;
+            color: #696969;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        &__img-block {
+            display: none;
+        }
+    }
+}

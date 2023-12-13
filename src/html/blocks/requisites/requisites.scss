@@ -1,0 +1,179 @@
+.requisites {
+
+    @include desktop {
+        &__inner {
+            grid-column: 2/10 span;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            display: grid;
+            row-gap: 30px;
+            padding-bottom: 110px;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        &__item-title {
+            grid-column: 3 span;
+            color: #898989;
+        }
+
+        &__item-description {
+            grid-column: 5/5 span;
+        }
+
+        &__subitem {
+            display: grid;
+            grid-column: 10 span;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item-text-block {
+            grid-column: 5/5 span;
+
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @include tablet {
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            display: grid;
+            row-gap: 30px;
+            padding-bottom: 110px;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        &__item-title {
+            grid-column: 3 span;
+            color: #898989;
+        }
+
+        &__item-description {
+            grid-column: 5/5 span;
+        }
+
+        &__subitem {
+            display: grid;
+            grid-column: 10 span;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item-text-block {
+            grid-column: 5/5 span;
+
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @include mobile {
+        &__inner {
+            grid-column: 12 span;
+        }
+
+        &__top {
+            margin-bottom: 30px;
+
+            .lg-title {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__content {
+            display: grid;
+            row-gap: 15px;
+            padding-bottom: 110px;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        &__item-title {
+            display: block;
+            margin-bottom: 8px;
+            grid-column: 10 span;
+            color: #898989;
+        }
+
+        &__item-description {
+            grid-column: 10 span;
+        }
+
+        &__subitem {
+            display: grid;
+            grid-column: 10 span;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item-text-block {
+            grid-column: 10 span;
+
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

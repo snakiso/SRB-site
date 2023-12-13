@@ -46,15 +46,23 @@
         transition: all .2s;
     }
 
-    &__swiper-wrapper{
+    &__swiper-wrapper {
         position: relative;
         z-index: 10;
+    }
+
+    &__slide-img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     @include desktop {
 
         &__slide {
-            padding: 130px 0;
+            padding: 200px 0 130px 0;
         }
 
         &__inner {
@@ -155,7 +163,7 @@
     @include tablet {
 
         &__slide {
-            padding: 120px 0;
+            padding: 180px 0 120px 0;
         }
 
         &__inner {
@@ -213,7 +221,7 @@
     @include mobile {
 
         &__slide {
-            padding: 90px 0 15px 0;
+            padding: 170px 0 15px 0;
         }
 
         &__inner {

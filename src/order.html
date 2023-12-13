@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Оформить заказ"
+})
+
+<body class="body">
+
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="wrapper grid">
+                    <div class="breadcrumb__inner">
+                        <a href="#" class="breadcrumb__link">Заказать</a>
+                        <a href="#" class="breadcrumb__link">Как оформить заказ</a>
+                    </div>
+                </div>
+
+            </div>
+            @@include('html/blocks/order/order.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+</body>
+<script src="./js/animations.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/tabs.js"></script>
+
+</html>
