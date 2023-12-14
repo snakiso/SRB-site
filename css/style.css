@@ -492,7 +492,7 @@ main {
 
 .hero__swiper-wrapper {
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 
 .hero__slide-img {
@@ -502,6 +502,10 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero__slide-wrapper {
+  z-index: 12;
 }
 
 @-webkit-keyframes play-button-inner {
@@ -1704,7 +1708,7 @@ main {
   .news__year {
     border: none;
     border-bottom: 1px solid black;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .news__share {

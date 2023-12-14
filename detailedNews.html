@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jQuery2.2.0.js?_v=20231213124541"></script>
-    <script src="js/ScrollAnimations.js?_v=20231213124541"></script>
+    <script src="js/jQuery2.2.0.js?_v=20231214155018"></script>
+    <script src="js/ScrollAnimations.js?_v=20231214155018"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231213124541"
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap&_v=20231214155018"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231213124541">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231214155018">
     <title>Новость</title>
 </head>
 
@@ -200,14 +200,14 @@
                     </div>
                 </div>
             </div>
-            <section class="news news_padding-none" data-animation-container>
+            <section class="news news_padding-none" >
     <div class="wrapper grid">
-        <div class="news__inner">
+        <div class="news__inner" data-animation-container>
             <div class="news__head">
-                <span class="news__detailed-data">25/08/23</span>
-                <h2 class="sm-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
+                <span class="news__detailed-data fade-up"  data-animation-child >25/08/23</span>
+                <h2 class="sm-title fade-up" data-animation-child data-delay=".1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
             </div>
-            <div class="news__share">
+            <div class="news__share fade-up" data-animation-child data-delay=".2">
                 <span>Поделиться</span>
                 <a href="#">
                     <img src="img/icons/whatsapp-green.svg" alt="">
@@ -222,7 +222,7 @@
                     <img src="img/icons/chain-green.svg" alt="">
                 </a>
             </div>
-            <p class="news__detailed-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero
+            <p class="news__detailed-text fade-up" data-animation-child data-delay=".3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero
                 neque, accumsan vel dui sed,
                 hendrerit
                 vestibulum nisl. Nullam in nibh porta, interdum dolor at, mollis ipsum. Curabitur hendrerit neque velit,
@@ -241,14 +241,14 @@
                 mollis commodo ac at orci. Morbi ac mollis sem, in sollicitudin sapien. Suspendisse ultricies, nisl ut
                 semper efficitur,
                 magna eros aliquam leo, et elementum ipsum eros placerat mauris.</p>
-            <p class="news__detailed-accent">Morbi non libero in nunc mollis pulvinar rutrum vitae est. Donec libero
+            <p class="news__detailed-accent fade-up" data-animation-child data-delay=".4">Morbi non libero in nunc mollis pulvinar rutrum vitae est. Donec libero
                 justo, porttitor consectetur aliquet nec, congue
                 nec ex. Nullam in enim massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                 cubilia curae;
                 Phasellus quis convallis ante. Duis consequat mollis vestibulum. Duis semper consequat facilisis. Donec
                 nisl sapien,
                 fringilla eget ex in, facilisis placerat risus.</p>
-            <p class="news__detailed-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero
+            <p class="news__detailed-text fade-up" data-animation-child data-delay=".5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero
                 neque, accumsan vel dui sed,
                 hendrerit
                 vestibulum nisl. Nullam in nibh porta, interdum dolor at, mollis ipsum. Curabitur hendrerit neque velit,
@@ -267,10 +267,10 @@
                 mollis commodo ac at orci. Morbi ac mollis sem, in sollicitudin sapien. Suspendisse ultricies, nisl ut
                 semper efficitur,
                 magna eros aliquam leo, et elementum ipsum eros placerat mauris.</p>
-            <p class="news__detailed-text">Morbi arcu massa, lobortis et ullamcorper non, hendrerit nec enim. Integer ut
+            <p class="news__detailed-text fade-up" data-animation-child data-delay=".6">Morbi arcu massa, lobortis et ullamcorper non, hendrerit nec enim. Integer ut
                 fringilla quam. Suspendisse ac massa odio.
                 Phasellus et risus ut velit blandit blandit. Phasellus ornare tincidunt cursus.</p>
-            <p class="news__detailed-text">Aliquam hendrerit aliquet viverra. Suspendisse malesuada augue lorem, et
+            <p class="news__detailed-text fade-up" data-animation-child data-delay=".7">Aliquam hendrerit aliquet viverra. Suspendisse malesuada augue lorem, et
                 pretium tellus aliquet quis. In blandit, nisl
                 lobortis interdum efficitur, felis lectus mollis nisl, id ullamcorper arcu dolor dapibus magna. Donec
                 dictum molestie
@@ -281,7 +281,7 @@
                 semper, ipsum id auctor feugiat, mi nisi mollis elit, ut efficitur ligula felis at mauris. Donec congue
                 id libero ac
                 ullamcorper. Curabitur non tortor consectetur, sodales odio a, faucibus magna.</p>
-            <p class="news__detailed-text">Nullam eu est vitae lacus luctus tristique. Donec dictum velit id neque
+            <p class="news__detailed-text fade-up" data-animation-child data-delay=".8">Nullam eu est vitae lacus luctus tristique. Donec dictum velit id neque
                 imperdiet, a ullamcorper est sollicitudin. In
                 imperdiet lobortis mi, ac vestibulum lectus fringilla at. Integer neque dui, suscipit nec odio ac,
                 sodales varius erat.
@@ -296,7 +296,7 @@
                 convallis semper neque, sed laoreet quam fringilla ac. Praesent eget sapien in tellus accumsan faucibus
                 eget nec erat.
                 Duis pretium malesuada.</p>
-             <div class="news__source">
+             <div class="news__source fade-up" data-animation-child>
                 <span>
                     Источник:
                 </span>
@@ -412,6 +412,7 @@
 </footer>
     </div>
 </body>
-<script src="./js/burger.js?_v=20231213124541"></script>
+<script src="./js/animations.js?_v=20231214155018"></script>
+<script src="./js/burger.js?_v=20231214155018"></script>
 
 </html>
